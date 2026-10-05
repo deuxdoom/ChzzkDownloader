@@ -1,0 +1,34 @@
+{
+  "note": "Actual Qt UI with fictional, error-free download states. Video metadata: user-selected samples (9 unique, 15063133 de-duplicated), randomly composed per screen. Channels and VOD rows: earlier public API reads of the five user example channels and the user's channel 97d97be401f6edc3b0ac6459bd498941 (channel page); missing VOD thumbnails would be drawn as stand-ins. No download was performed for them. Update window: example 1.0.0 progress state.",
+  "screenshots": {
+    "app-download.png": [
+      "https://chzzk.naver.com/video/15063133",
+      "https://chzzk.naver.com/video/15474788",
+      "https://chzzk.naver.com/video/12787899",
+      "https://chzzk.naver.com/video/14574876"
+    ],
+    "app-input.png": [
+      "https://chzzk.naver.com/video/14574878",
+      "https://chzzk.naver.com/video/13427487",
+      "https://chzzk.naver.com/video/12509845"
+    ],
+    "app-multi.png": [
+      "https://chzzk.naver.com/video/14574879",
+      "https://www.youtube.com/shorts/영상ID",
+      "https://www.instagram.com/reel/릴스ID/"
+    ],
+    "app-history.png": [
+      "https://chzzk.naver.com/video/13810588",
+      "https://chzzk.naver.com/video/12787899",
+      "https://chzzk.naver.com/video/13427487",
+      "https://chzzk.naver.com/video/15063133",
+      "https://chzzk.naver.com/video/12509845"
+    ],
+    "app-channel.png": [
+      "https://chzzk.naver.com/97d97be401f6edc3b0ac6459bd498941/videos",
+      "https://chzzk.naver.com/video/15063133",
+      "https://chzzk.naver.com/video/14574879"
+    ],
+    "app-channel.png synthetic thumbnails": []
+  }
+}
