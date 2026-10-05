@@ -1,5 +1,6 @@
 @font-face{font-family:Pretendard;src:url('fonts/Pretendard-Regular.otf') format('opentype');font-display:swap;font-weight:400}
-@media(min-width:1001px){.feature:last-child:nth-child(3n+1){grid-column:1/-1}}
+@media(min-width:1001px){.feature:last-child:nth-child(3n+1){grid-column:1/-1}.feature:last-child:nth-child(3n+2){grid-column:span 2}}
+@media(min-width:701px) and (max-width:1000px){.feature:last-child:nth-child(2n+1){grid-column:1/-1}}
 @font-face{font-family:Pretendard;src:url('fonts/Pretendard-SemiBold.otf') format('opentype');font-display:swap;font-weight:600 900}
 :root{color-scheme:dark;--bg:#101412;--panel:#191e1b;--line:#2c332f;--text:#f1f6f3;--muted:#a1aea6;--mint:#00ffa3}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--text);font-family:Pretendard,'Malgun Gothic',system-ui,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}a{color:inherit;text-decoration:none}button,a,summary{touch-action:manipulation}a:focus-visible,summary:focus-visible{outline:2px solid var(--mint);outline-offset:6px}img{display:block;max-width:100%;height:auto}.wrap{width:min(1160px,calc(100% - 64px));margin-inline:auto}.skip{position:fixed;left:16px;top:-80px;background:var(--mint);color:#071c12;padding:12px 20px;border-radius:8px;z-index:20}.skip:focus{top:16px}

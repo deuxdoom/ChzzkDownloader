@@ -1,10 +1,6 @@
 <h1 align="center"><img src="docs/img/logo.png" width="28" alt="ChzzkDownloader Logo"> 치지직 다운로더 (ChzzkDownloader)</h1>
 
 <p align="center">
-  <a href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest"><img src="https://img.shields.io/github/v/release/deuxdoom/ChzzkDownloader?style=for-the-badge&label=%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&labelColor=2f353a&color=00b377" alt="최신 버전 다운로드"></a>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/PLATFORM-WINDOWS%20X64-0078d4?style=flat&logo=windows&logoColor=white&labelColor=2f353a" alt="Platform">
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/PYTHON-3.14-3776ab?style=flat&logo=python&logoColor=white&labelColor=2f353a" alt="Python"></a>
   <a href="https://pypi.org/project/PySide6/"><img src="https://img.shields.io/badge/PYSIDE6-GUI-10b981?style=flat&logo=qt&logoColor=white&labelColor=2f353a" alt="PySide6"></a>
@@ -17,7 +13,7 @@
 
 <p align="center">
   <a href="https://deuxdoom.github.io/ChzzkDownloader/"><img src="https://img.shields.io/badge/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-00b377?style=for-the-badge" alt="홈페이지"></a>
-  <a href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest"><img src="https://img.shields.io/badge/%EC%B5%9C%EC%8B%A0%20%EB%B2%84%EC%A0%84%20%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-00b377?style=for-the-badge" alt="최신 버전 다운로드"></a>
+  <a href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest"><img src="https://img.shields.io/github/v/release/deuxdoom/ChzzkDownloader?style=for-the-badge&label=%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&labelColor=2f353a&color=00b377" alt="최신 버전 다운로드"></a>
 </p>
 
 ---
@@ -59,13 +55,14 @@
 - **MP4 저장·변환**: 원본 유지가 기본. 필요하면 CPU 또는 NVIDIA NVENC로 H.264(AVC)·H.265(HEVC) 변환. 변환이 실패하거나 취소돼도 원본 보존
 - **트레이 실행**: 창을 닫아도 트레이에서 다운로드 계속, 대기열 일시정지·재개, 완료 알림
 - **자동 업데이트**: GitHub 정식 릴리스의 추가·변경·수정 내역을 확인한 뒤 ‘지금 업데이트’·‘나중에’를 선택. 설치 시 SHA-256 검증 후 프로그램만 교체. 영상·기록·설정은 그대로
+- **도구 업데이트**: 없는 FFmpeg·ffprobe는 첫 실행에 자동으로 준비. 설정의 ‘도구 업데이트’로 최신 FFmpeg와 yt-dlp nightly를 받고 다음 다운로드부터 적용
 
 <a id="usage"></a>
 
 ## 🚀 사용 방법
 
 1. 릴리스의 `ChzzkDownloader_v100.zip`(버전 1.0.0 기준)을 풀고 `ChzzkDownloader.exe`를 실행합니다. `lib`, `bin` 폴더는 EXE 옆에 그대로 둡니다.
-2. 사이드바 맨 아래 **설정**에서 저장 위치·화질·인코딩·동시 다운로드 수를 정합니다.
+2. 첫 실행에는 인터넷으로 필요한 영상 도구를 자동으로 받습니다. 준비가 끝나면 사이드바 맨 아래 **설정**에서 저장 위치·화질·인코딩·동시 다운로드 수를 정합니다. 도구를 최신으로 바꾸려면 작업이 끝난 뒤 **도구 업데이트**를 누릅니다.
 3. 어떤 사이트의 영상 주소든 붙여넣고 **다운로드**를 누릅니다. 여러 영상은 **다중 다운로드** 창에 한 줄씩 넣고 **다운로드 (개수)**를 누릅니다. 입력 순서대로 목록에 추가되며 설정한 동시 영상 수만큼 시작합니다.
 4. 채널 단위로 고르려면 **채널 즐겨찾기**에서 채널을 저장한 뒤 카드를 눌러 영상을 선택합니다.
 5. 이번 실행의 완료 영상은 **다운로드 목록**에서 바로 재생합니다. **완료 항목 정리**는 이 목록에서만 숨기며, 이전 실행의 작업·실패·취소 항목은 **다운로드 기록**에서 확인합니다.
