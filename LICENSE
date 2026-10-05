@@ -1,21 +1,23 @@
-MIT License
+ChzzkDownloader 프로젝트 이용 조건
 
-Copyright (c) 2026 SAKURA
+Copyright (c) 2026 SAKURA. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+본 저장소는 ChzzkDownloader의 배포 및 소개를 목적으로 운영하며,
+프로젝트 자체 소스 코드는 공개하지 않습니다.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. 개인 이용
+   ChzzkDownloader는 개인의 비상업적 용도로 사용할 수 있습니다.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. 상업적 이용 금지
+   제작자의 사전 허락 없이 프로그램과 자체 제작 자료를 판매하거나,
+   유료 서비스 제공 등 영리 목적으로 이용할 수 없습니다.
+
+3. 무단 재배포 금지
+   제작자의 사전 허락 없이 프로그램, 배포 파일 또는 자체 제작 자료를
+   재업로드하거나 수정한 버전을 배포할 수 없습니다.
+   프로그램을 소개할 때는 공식 홈페이지 또는 공식 릴리스 링크를 공유해 주세요.
+
+4. 외부 구성요소
+   FFmpeg, yt-dlp, PySide6, Pretendard, Fluent UI System Icons, Octicons 등
+   외부 구성요소에는 각각의 라이선스가 적용됩니다.
+   본 이용 조건은 해당 라이선스가 부여하는 권리를 제한하지 않습니다.

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101412">
+  <meta name="description" content="ChzzkDownloader — 치지직 VOD와 클립을 내 폴더에. 화질 선택, 여러 영상 다운로드, 채널 즐겨찾기와 다운로드 기록까지 제공하는 Windows 다운로더.">
+  <title>ChzzkDownloader — 다시 보고 싶은 순간을, 내 폴더에</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="header">
+    <a class="brand" href="#" aria-label="ChzzkDownloader 홈"><img src="img/logo.svg" width="36" height="36" alt=""><span>Chzzk<span class="brand-sub">Downloader</span></span></a>
+    <nav aria-label="주 메뉴"><a href="#overview">개요</a><a href="#start">시작</a><a href="#features">기능</a><a href="#preview">화면</a><a href="#channels">채널</a><a href="#faq">FAQ</a><a href="#download">다운로드</a><a class="repo" href="https://github.com/deuxdoom/ChzzkDownloader"><span class="github-icon" aria-hidden="true"></span>GitHub <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <aside class="chapter-nav" aria-label="페이지 섹션"><a href="#overview" aria-label="개요"><span>개요</span></a><a href="#start" aria-label="시작"><span>시작</span></a><a href="#features" aria-label="기능"><span>기능</span></a><a href="#preview" aria-label="화면"><span>화면</span></a><a href="#channels" aria-label="채널"><span>채널</span></a><a href="#faq" aria-label="FAQ"><span>FAQ</span></a><a href="#download" aria-label="다운로드"><span>다운로드</span></a></aside>
+  <main id="main">
+    <section class="hero wrap" id="overview" data-chapter>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> CHZZK &amp; ANY VIDEO URL DOWNLOADER</p>
+        <h1>다시 보고 싶은 순간을,<br><em>내 폴더에.</em></h1>
+        <p class="lead">긴 다시보기도, 짧은 클립도.<br>링크를 붙여넣으면 나만의 영상 라이브러리가 시작됩니다.</p>
+        <div class="hero-actions"><a class="button primary" href="https://github.com/deuxdoom/ChzzkDownloader/releases/download/v1.0.0/ChzzkDownloader_v100.zip" data-download><span class="github-icon" aria-hidden="true"></span>다운로드(.zip) <span aria-hidden="true">↓</span></a><a class="button secondary" href="#preview">화면 살펴보기 <span aria-hidden="true">↘</span></a></div>
+        <p class="availability">Windows 데스크톱 · 1.0.0 · 폴더형 포터블 앱</p>
+        <p class="release-note"><code>ChzzkDownloader_v100.zip</code> · 배포 파일은 GitHub 정식 릴리스에서 제공합니다.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><img src="img/logo.svg" width="256" height="256" alt=""><span class="art-label">KEEP THE MOMENT.</span></div>
+    </section>
+
+    <section class="guide wrap" id="start" data-chapter aria-labelledby="guide-title">
+      <div class="guide-heading"><p class="eyebrow">THREE STEPS. YOUR LIBRARY.</p><h2 id="guide-title">시작하기</h2></div>
+      <ol class="steps"><li><span class="step-number">1</span><div><h3>프로그램 열기</h3><p><code>ChzzkDownloader_v100.zip</code>을 풀고 폴더 구조를 유지한 채 <code>ChzzkDownloader.exe</code>를 실행합니다. <code>lib</code>·<code>bin</code> 폴더는 EXE와 함께 두세요.</p></div></li><li><span class="step-number">2</span><div><h3>저장 위치와 옵션 고르기</h3><p>사이드바 맨 아래 ‘설정’에서 저장 위치·화질·인코딩·동시 다운로드 수를 정합니다. 저장 위치는 다음 실행에도 유지됩니다.</p></div></li><li><span class="step-number">3</span><div><h3>주소 붙여넣고 다운로드</h3><p>영상 주소를 붙여넣고 ‘다운로드’를 누르세요. 여러 영상은 ‘다중 다운로드’ 창에 한 줄씩 넣습니다. 이번 실행의 완료 영상은 다운로드 목록에서 바로 재생할 수 있습니다.</p></div></li></ol>
+    </section>
+
+    <section class="story" id="features" data-chapter aria-label="기능 스크롤 소개">
+      <div class="story-sticky wrap">
+        <div class="story-copy">
+          <p class="eyebrow">BUILT FOR YOUR MOMENTS.</p>
+          <div class="story-slides">
+            <article class="story-slide is-active" data-slide="0"><span class="story-number">01 — COLLECT</span><h2>붙여넣는 순간.<br><em>라이브러리의 시작.</em></h2><p>한 개의 링크부터 여러 개의 다시보기까지.<br>‘다중 다운로드’에 한 줄씩 넣고,<br>입력한 순서대로 목록에 추가하세요.</p></article>
+            <article class="story-slide" data-slide="1"><span class="story-number">02 — MAKE IT YOURS</span><h2>화질도. 코덱도.<br><em>원하는 대로.</em></h2><p>원본 그대로의 MP4. 또는 CPU와 NVIDIA NVENC.<br>H.264와 H.265로 나에게 맞는 보관 방식을 선택하세요.</p></article>
+            <article class="story-slide" data-slide="2"><span class="story-number">03 — KEEP GOING</span><h2>창은 작게.<br><em>다운로드는 계속.</em></h2><p>트레이에서 대기열을 제어하고, 끝난 작업은 다운로드 기록에서 다시 찾으세요.<br>새 버전은 별도 업데이트 창에서 안전하게 이어집니다.</p></article>
+          </div>
+          <div class="story-pagination" aria-label="기능 슬라이드"><button aria-label="링크 입력 기능" data-go="0" class="is-active"></button><button aria-label="인코딩 설정 기능" data-go="1"></button><button aria-label="트레이와 업데이트 기능" data-go="2"></button></div>
+          <span class="scroll-hint">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span>
+        </div>
+        <div class="story-art" aria-hidden="true">
+          <div class="story-glow"></div>
+          <div class="story-device"><img class="story-image library" src="img/app-input.png" width="1830" height="1230" alt=""><img class="story-image preferences" src="img/app-quality.png" width="1830" height="1230" alt=""><img class="story-image background" src="img/app-history.png" width="1830" height="1230" alt=""></div>
+          <span class="floating-chip chip-a">MP4 · YOUR LIBRARY</span><span class="floating-chip chip-b">1080p · 60 fps</span><span class="floating-chip chip-c">CPU / NVIDIA NVENC</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="features wrap" id="details" aria-labelledby="features-title">
+      <p class="eyebrow">SMALL DETAILS. BETTER DOWNLOADS.</p>
+      <h2 id="features-title">다운로드는 간단하게.<br>관리는 꼼꼼하게.</h2>
+      <div class="feature-grid">
+        <article class="feature"><span class="feature-no">01 / INPUT</span><h3>링크만 있으면 준비 끝.</h3><p>치지직 VOD·클립은 물론 YouTube·인스타그램 등 어떤 사이트의 영상 주소든 붙여넣으세요. ‘다중 다운로드’ 창에 주소를 한 줄씩 넣어 한 번에 추가하거나, 브라우저에서 끌어놓을 수 있습니다.</p><span class="pill">ANY VIDEO URL</span></article>
+        <article class="feature"><span class="feature-no">02 / QUALITY</span><h3>내가 고른 화질과 형식.</h3><p>최고 화질 또는 원하는 해상도 상한을 선택하세요. MP4로 저장합니다. 원본 유지 또는 CPU/NVIDIA NVENC 인코딩, H.264(AVC)/H.265(HEVC)를 선택하세요.</p><span class="pill">MP4 · AVC / HEVC</span></article>
+        <article class="feature"><span class="feature-no">03 / SPEED</span><h3>긴 영상도 차근차근.</h3><p>최대 4개 영상과 영상당 최대 16개 조각을 동시에 다운로드합니다. 진행률과 전송 속도, 남은 시간을 카드에서 확인하세요.</p><span class="pill">PARALLEL DOWNLOADS</span></article>
+        <article class="feature"><span class="feature-no">04 / HISTORY</span><h3>완료 영상은 바로 재생.</h3><p>이번 실행의 완료 영상은 다운로드 목록에서 재생하거나 더블클릭하세요. ‘완료 항목 정리’로 숨겨도 영상과 기록은 남습니다. 이전 실행의 작업·실패·취소 항목은 다운로드 기록에서 확인합니다.</p><span class="pill">DOWNLOAD HISTORY</span></article>
+        <article class="feature"><span class="feature-no">05 / CONTROL</span><h3>필요할 때 잠깐 쉬어가기.</h3><p>대기열을 멈추면 진행 중인 영상은 계속 받고 다음 작업의 시작을 기다립니다. 실패한 작업은 한 번에 재시도하세요.</p><span class="pill">QUEUE CONTROL</span></article>
+        <article class="feature"><span class="feature-no">06 / YOUR FILES</span><h3>영상은 내 폴더에 바로.</h3><p>영상 제목 그대로 저장하고 같은 이름이 있으면 번호를 붙입니다. 목록 정리와 다운로드 취소에도 이미 완성한 파일은 보존됩니다.</p><span class="pill">LOCAL FIRST</span></article>
+        <article class="feature"><span class="feature-no">07 / BACKGROUND</span><h3>트레이에서 이어가기.</h3><p>창을 숨겨도 다운로드는 계속됩니다. 트레이 메뉴에서 대기열을 멈추거나 재개하고, 완료 알림으로 다시 돌아오세요.</p><span class="pill">SYSTEM TRAY</span></article>
+        <article class="feature"><span class="feature-no">08 / UPDATES</span><h3>새 버전으로 자연스럽게.</h3><p>새 버전의 추가·변경·수정 내역을 먼저 보여 줍니다. ‘지금 업데이트’를 선택하면 다운로드가 끝난 뒤 같은 프로그램의 독립 업데이트 모드가 배포 파일을 검증하고 프로그램을 교체합니다.</p><span class="pill">INDEPENDENT UPDATER</span></article>
+        <article class="feature"><span class="feature-no">09 / ENCODING</span><h3>빠르게, 또는 가볍게.</h3><p>원본 유지가 기본입니다. 변환이 필요할 때 CPU/NVENC와 AVC/HEVC를 선택하세요. 변환 실패·취소 시 다운로드한 원본은 보존합니다.</p><span class="pill">AVC / HEVC</span></article>
+        <article class="feature"><span class="feature-no">10 / FAVORITES</span><h3>즐겨찾는 채널에서 골라 받기.</h3><p>채널명이나 주소로 검색해 즐겨찾기에 저장하세요. 채널 카드를 누르면 VOD를 썸네일·제목·날짜로 확인하고 원하는 영상만 선택해 받을 수 있습니다.</p><span class="pill">CHANNEL FAVORITES</span></article>
+      </div>
+    </section>
+
+    <section class="preview wrap" id="preview" data-chapter aria-labelledby="preview-title">
+      <div class="preview-top"><div><p class="eyebrow">A CALMER WAY TO DOWNLOAD</p><h2 id="preview-title">필요한 것만, 한눈에.</h2></div><span class="version-tag">ChzzkDownloader 1.0.0</span></div>
+      <div class="screen"><img src="img/app-download.png" width="1830" height="1230" alt="ChzzkDownloader의 다운로드 화면. 왼쪽 사이드바에 다운로드·다운로드 기록·채널 즐겨찾기와 맨 아래 다운로드 폴더·설정, 오른쪽에 주소 입력·다중 다운로드 버튼과 대기·진행·완료 영상 카드가 보입니다. 완료 카드는 재생할 수 있습니다." fetchpriority="high"></div>
+      <p class="caption">실제 앱 인터페이스 · 작업 내용은 화면 소개를 위한 예시입니다.</p>
+    </section>
+
+    <section class="settings wrap" id="multi-download" aria-labelledby="multi-title">
+      <div class="settings-copy"><p class="eyebrow">MORE LINKS. ONE LIST.</p><h2 id="multi-title">여러 영상도,<br>한 줄씩 간단하게.</h2><p>다운로드 화면의 ‘다중 다운로드’를 누르고 주소를 한 줄에 하나씩 넣으세요. 주소 개수를 확인한 뒤 ‘다운로드 (개수)’를 누르면 입력한 순서대로 목록에 추가됩니다.</p><p class="muted">중복 주소와 주소가 아닌 입력은 건너뜁니다. 설정한 동시 영상 수만큼 받고, 나머지는 대기합니다.</p></div>
+      <div class="settings-screen"><img src="img/app-multi.png" width="960" height="630" loading="lazy" alt="다중 다운로드 창. 여러 사이트의 영상 주소를 한 줄씩 입력하고 주소 개수와 다운로드 버튼을 확인합니다."></div>
+    </section>
+
+    <section class="settings wrap" id="settings" aria-labelledby="settings-title">
+      <div class="settings-copy"><p class="eyebrow">SET IT ONCE.</p><h2 id="settings-title">취향에 맞춰 두면,<br>그다음은 붙여넣기.</h2><p>사이드바 맨 아래의 ‘설정’에서 저장 위치, 화질, 인코딩, 동시 다운로드 수, 트레이와 업데이트를 정하세요. 저장 위치를 바꾸면 다음 실행에도 유지됩니다.</p><p class="muted">기존 yt-dlp 지원 사이트도 함께 사용할 수 있습니다. 사이트의 변경이나 계정 접근 조건에 따라 다운로드 가능 여부가 달라질 수 있습니다.</p></div>
+      <div class="settings-screen"><img src="img/app-settings.png" width="1830" height="1230" loading="lazy" alt="설정 화면. 저장 위치·화질·CPU/NVENC·H.264/H.265·동시 영상과 조각 수·트레이·업데이트 확인을 한 카드에서 설정합니다."></div>
+    </section>
+
+    <section class="channels wrap" id="channels" data-chapter aria-labelledby="channels-title">
+      <div class="channels-head"><div><p class="eyebrow">YOUR CHANNELS. YOUR PICKS.</p><h2 id="channels-title">좋아하는 채널은,<br>카드 한 장으로.</h2></div><p>‘채널 즐겨찾기’에서 채널명이나 주소로 찾아 ‘추가’를 누르세요. 저장한 카드를 누르면 그 채널의 VOD가 썸네일·제목·날짜와 함께 펼쳐지고, 원하는 영상만 골라 바로 받을 수 있습니다.</p></div>
+      <div class="channel-shots">
+        <figure><div class="settings-screen"><img src="img/app-favorites.png" width="1830" height="1230" loading="lazy" alt="채널 즐겨찾기 화면. 위쪽에 채널 주소 검색과 오른쪽에 ‘추가’ 버튼이 있는 결과 카드, 아래쪽에 아바타와 채널명이 있는 저장한 채널 카드 다섯 개가 있습니다."></div><figcaption>검색하고, 추가하고, 카드로 모아 두기</figcaption></figure>
+        <figure><div class="settings-screen"><img src="img/app-channel.png" width="1830" height="1230" loading="lazy" alt="채널 VOD 화면. 채널 아바타와 이름 아래에 썸네일·재생 시간·제목·게시일이 있는 VOD 카드가 격자로 놓이고, 선택한 두 카드가 민트색으로 표시됩니다."></div><figcaption>썸네일로 고르고, 선택한 영상만 다운로드</figcaption></figure>
+      </div>
+      <p class="caption">실제 앱 인터페이스 · 채널과 VOD 정보는 공개 목록 예시이며, 작업 상태는 화면 소개를 위한 예시입니다.</p>
+    </section>
+
+    <section class="settings updates wrap" id="updates" aria-labelledby="updates-title">
+      <div class="settings-copy"><p class="eyebrow">ALWAYS UP TO DATE.</p><h2 id="updates-title">새 버전은,<br>알아서 안전하게.</h2><p>시작할 때 GitHub의 정식 릴리스를 확인합니다. 처음 뜨는 안내창에서 추가·변경·수정 내역을 읽고 ‘지금 업데이트’ 또는 ‘나중에’를 선택하세요. 설치를 고르면 진행 중인 다운로드가 끝난 뒤 업데이트 창이 이어받아 새 버전을 준비합니다.</p><ol class="update-steps"><li>새 버전의 변경 내역 확인 · 지금 업데이트 / 나중에 선택</li><li>ZIP 다운로드 · SHA-256 검증</li><li>프로그램 파일만 교체 · 실패하면 원래대로 복원</li><li>다시 시작 · 완료 5초 뒤 업데이트 창 자동 닫힘</li></ol><p class="muted">저장한 영상 · 다운로드 기록 · 설정 · 채널 즐겨찾기는 바꾸지 않습니다. ‘설정 → 업데이트 확인’으로 직접 확인할 수도 있습니다.</p></div>
+      <div class="settings-screen update-screen"><img src="img/app-update.png" width="960" height="900" loading="lazy" alt="업데이트 창. 새 버전 파일을 내려받는 진행률과 상태, 릴리스 내역, 저장한 영상·기록·설정은 그대로 이어진다는 안내가 보입니다."></div>
+    </section>
+
+    <section class="faq wrap" id="faq" data-chapter aria-labelledby="faq-title"><h2 id="faq-title">궁금한 점이 있다면.</h2><details><summary>어떤 주소를 입력하나요?</summary><p>영상이 있는 페이지의 주소라면 사이트를 가리지 않고 분석해 받습니다. 치지직은 <code>https://chzzk.naver.com/video/번호</code> VOD 주소나 <code>https://chzzk.naver.com/clips/ID</code> 클립 주소, 그 밖에 YouTube(쇼츠)·인스타그램 릴스 등의 개별 영상 주소를 입력하세요. 여러 주소는 ‘다중 다운로드’ 창에 한 줄씩 넣으세요. 채널에서 고르려면 ‘채널 즐겨찾기’에 저장한 뒤 VOD 카드를 선택하세요.</p></details><details><summary>채널 즐겨찾기는 어떻게 쓰나요?</summary><p>채널명 또는 <code>https://chzzk.naver.com/채널ID</code> 주소로 검색해 결과 카드의 ‘추가’를 누릅니다. 저장한 카드를 누르면 공개 VOD가 썸네일·제목·날짜 카드로 표시되고, 카드를 눌러 선택한 영상만 다운로드합니다.</p></details><details><summary>로그인이 필요한 영상도 받을 수 있나요?</summary><p>공개 영상만 지원합니다. 연령 확인이 필요하거나 구독자 전용인 영상은 받을 수 없습니다.</p></details><details><summary>일시정지를 누르면 받던 영상도 멈추나요?</summary><p>대기열 일시정지는 새로운 영상의 시작을 멈춥니다. 진행 중인 영상은 계속 다운로드하며, 해당 영상의 취소 버튼으로 중단할 수 있습니다.</p></details><details><summary>기록을 정리하면 영상도 지워지나요?</summary><p>다운로드 기록에서 해당 항목과 미리보기 캐시만 제거합니다. 저장 폴더의 영상 파일은 유지됩니다.</p></details></section>
+
+    <section class="closing wrap" id="download" data-chapter><div><p class="eyebrow">READY WHEN YOU ARE.</p><h2>좋아하는 방송을,<br>오래 간직하세요.</h2></div><div class="closing-actions"><a class="button primary" href="https://github.com/deuxdoom/ChzzkDownloader/releases/download/v1.0.0/ChzzkDownloader_v100.zip" data-download><span aria-hidden="true">↓</span> 다운로드(.zip)</a><a class="button secondary" href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest"><span class="github-icon" aria-hidden="true"></span>최신 릴리즈 확인 <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="footer wrap"><div><a class="brand" href="#"><img src="img/logo.svg" width="28" height="28" alt=""><span>ChzzkDownloader</span></a><p>치지직·YouTube 등 영상 주소를 받는 개인 프로젝트. NAVER의 공식 프로그램이 아닙니다.</p><p>소스 비공개 · 배포 및 소개 목적 · 사전 허락 없는 상업적 이용·재배포 금지</p></div><div class="footer-links"><a href="https://github.com/deuxdoom/ChzzkDownloader"><span class="github-icon" aria-hidden="true"></span>GitHub</a><a href="https://github.com/deuxdoom/ChzzkDownloader/issues"><span class="github-icon" aria-hidden="true"></span>문제 제보</a><a href="https://github.com/deuxdoom/ChzzkDownloader/blob/main/LICENSE">이용 조건</a><a href="https://github.com/honey720/chzzk-vod-downloader-v2"><span class="github-icon" aria-hidden="true"></span>참고 프로젝트</a></div></footer>
+</body>
+</html>
