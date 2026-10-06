@@ -11,8 +11,6 @@
 
 ![ChzzkDownloader 다운로드 화면](docs/img/app-download.png)
 
-1.0.2의 실제 앱 화면입니다. 영상과 진행 상태는 소개를 위한 예시입니다.
-
 <p align="center">
   <a href="https://deuxdoom.github.io/ChzzkDownloader/"><img src="https://img.shields.io/badge/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-00b377?style=for-the-badge" alt="홈페이지"></a>
   <a href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest"><img src="https://img.shields.io/github/v/release/deuxdoom/ChzzkDownloader?style=for-the-badge&label=%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&labelColor=2f353a&color=00b377" alt="최신 버전 다운로드"></a>
