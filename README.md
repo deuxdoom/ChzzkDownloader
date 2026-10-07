@@ -23,6 +23,7 @@
   <a href="#requirements"><img src="https://img.shields.io/badge/%EC%9A%94%EA%B5%AC%20%EC%82%AC%ED%95%AD-2f353a?style=flat-square" alt="요구 사항"></a>
   <a href="#features"><img src="https://img.shields.io/badge/%EC%A3%BC%EC%9A%94%20%EA%B8%B0%EB%8A%A5-2f353a?style=flat-square" alt="주요 기능"></a>
   <a href="#usage"><img src="https://img.shields.io/badge/%EC%82%AC%EC%9A%A9%20%EB%B0%A9%EB%B2%95-2f353a?style=flat-square" alt="사용 방법"></a>
+  <a href="#screenshots"><img src="https://img.shields.io/badge/%ED%99%94%EB%A9%B4%20%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0-2f353a?style=flat-square" alt="화면 살펴보기"></a>
   <a href="#cautions"><img src="https://img.shields.io/badge/%EC%A3%BC%EC%9D%98%20%EC%82%AC%ED%95%AD-2f353a?style=flat-square" alt="주의 사항"></a>
   <a href="#backup"><img src="https://img.shields.io/badge/%EB%B0%B1%EC%97%85-2f353a?style=flat-square" alt="백업"></a>
   <a href="#license"><img src="https://img.shields.io/badge/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-2f353a?style=flat-square" alt="라이선스"></a>
@@ -74,6 +75,8 @@ TVer는 일본 VPN에 연결한 상태에서 다운로드해야 합니다.
 5. 다운이 완료된 영상은 **다운로드 목록**에서 바로 재생 가능합니다. 이전 실행의 작업·실패·취소 항목은 **다운로드 기록**에서 확인합니다.
 6. 취소·대기·종료 중단 작업은 다음 실행에 대기로 복원됩니다. **대기열 계속**으로 재개하세요. 완료 기록과 같은 영상을 다시 추가하면 **다시 다운로드**할지 확인합니다.
 
+<a id="screenshots"></a>
+
 ### 화면 살펴보기
 
 | 설정 | 채널 영상 |
@@ -84,7 +87,6 @@ TVer는 일본 VPN에 연결한 상태에서 다운로드해야 합니다.
 | --- | --- |
 | ![메인 하단의 도구 다운로드 상태와 진행률](docs/img/app-tools.png) | ![썸네일 오른쪽 위의 19세 배지 예시](docs/img/app-channel-age.png) |
 
-화면은 실제 1.0.2 UI이며 도구 진행률·영상 목록·연령 제한 표시는 소개용 예시입니다. 19세 배지는 제한 여부를 알려 주며 로그인 인증 기능을 제공하지 않습니다.
 
 <a id="cautions"></a>
 
