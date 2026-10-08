@@ -2,18 +2,20 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PLATFORM-WINDOWS%20X64-0078d4?style=flat&logo=windows&logoColor=white&labelColor=2f353a" alt="Platform">
+  <a href="https://github.com/deuxdoom/ChzzkDownloader/releases"><img src="https://img.shields.io/github/downloads/deuxdoom/ChzzkDownloader/total?style=flat&logo=github&logoColor=white&label=DOWNLOADS&labelColor=2f353a&color=2ea44f" alt="총 다운로드 수"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-Proprietary-00b377?style=flat&labelColor=2f353a" alt="프로젝트 이용 조건"></a>
+  <br>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/PYTHON-3.14-3776ab?style=flat&logo=python&logoColor=white&labelColor=2f353a" alt="Python"></a>
   <a href="https://pypi.org/project/PySide6/"><img src="https://img.shields.io/badge/PYSIDE6-GUI-10b981?style=flat&logo=qt&logoColor=white&labelColor=2f353a" alt="PySide6"></a>
   <a href="https://github.com/yt-dlp/yt-dlp"><img src="https://img.shields.io/badge/MADE%20WITH-yt--dlp-f97316?style=flat&labelColor=2f353a" alt="Made with yt-dlp"></a>
   <a href="https://ffmpeg.org/"><img src="https://img.shields.io/badge/MADE%20WITH-FFmpeg-007808?style=flat&logo=ffmpeg&logoColor=white&labelColor=2f353a" alt="Made with FFmpeg"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-Proprietary-00b377?style=flat&labelColor=2f353a" alt="프로젝트 이용 조건"></a>
 </p>
 
 ![ChzzkDownloader 다운로드 화면](docs/img/app-download.png)
 
 <p align="center">
-  <a href="https://deuxdoom.github.io/ChzzkDownloader/"><img src="https://img.shields.io/badge/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-00b377?style=for-the-badge" alt="홈페이지"></a>
-  <a href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest"><img src="https://img.shields.io/github/v/release/deuxdoom/ChzzkDownloader?style=for-the-badge&label=%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&labelColor=2f353a&color=00b377" alt="최신 버전 다운로드"></a>
+  <a href="https://deuxdoom.github.io/ChzzkDownloader/"><img src="https://img.shields.io/badge/%E2%86%97%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-0e6b4c?style=for-the-badge" alt="홈페이지"></a>
+  <a href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest"><img src="https://img.shields.io/github/v/release/deuxdoom/ChzzkDownloader?style=for-the-badge&label=%E2%86%93%20%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&labelColor=00a36c&color=00c389" alt="최신 버전 다운로드"></a>
 </p>
 
 ---
