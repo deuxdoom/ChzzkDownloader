@@ -84,12 +84,12 @@ TVer는 일본 VPN에 연결한 상태에서 다운로드해야 합니다.
 ### 쿠키 파일 저장하기
 
 1. 평소 브라우저에 [Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)를 설치합니다.
-2. 치지직에 로그인한 뒤 **메인 화면 https://chzzk.naver.com/**을 열어 둡니다.
+2. 치지직에 로그인한 뒤 `메인 화면 https://chzzk.naver.com/` 을 열어 둡니다.
 3. **브라우저 주소창 옆에서 확장 프로그램 아이콘을 눌러** 여세요. 아래처럼 표시된 주소가 치지직인지 확인한 뒤 **왼쪽 첫 번째 Export 버튼만** 누르세요.
 
 ![치지직 메인 화면에서 확장 프로그램을 열고 왼쪽 첫 번째 Export를 누르는 화면](docs/img/chzzk-cookie-export.png)
 
-4. 기본 파일명은 **`chzzk.naver.com_cookies.txt`**입니다. 브라우저의 다운로드 위치를 확인하고, 저장 창이 나오면 원하는 위치에 저장합니다.
+4. 기본 파일명은 `chzzk.naver.com_cookies.txt`입니다. 브라우저의 다운로드 위치를 확인하고, 저장 창이 나오면 원하는 위치에 저장합니다.
 5. 앱에서 **쿠키 파일 가져오기 → 저장 동의 → 파일 선택 → 가져오고 연결** 순서로 진행합니다. 가져오기 창에서도 같은 이미지와 순서를 확인할 수 있습니다.
 
 <a id="screenshots"></a>
