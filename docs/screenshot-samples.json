@@ -1,7 +1,7 @@
 {
-  "note": "Actual Qt UI with fictional, error-free download states. Video metadata: user-selected samples (9 unique, 15063133 de-duplicated), randomly composed per screen. Channels and VOD rows: earlier public API reads of the five user example channels and the user's channel 97d97be401f6edc3b0ac6459bd498941 (channel page); missing VOD thumbnails would be drawn as stand-ins. No download was performed for them. Update window: example 1.0.2 progress state. Tool download and age-restriction states are fictional examples.",
-  "app_version": "1.0.2",
-  "captured_at": "2026-10-06",
+  "note": "Actual Qt UI with fictional, error-free download states. Video metadata: user-selected samples (9 unique, 15063133 de-duplicated), randomly composed per screen. Channels and VOD rows: earlier public API reads of the five user example channels, the user-requested favorite 3d93cfd617c2bf0e6916b5d8ca34708d and the user's channel 97d97be401f6edc3b0ac6459bd498941 (channel page); missing VOD thumbnails would be drawn as stand-ins. No download was performed for them. Update window: example 1.0.3 progress state. Tool download and age-restriction states are fictional examples. Account screens: fictional example accounts and photo without cookie import, authentication or network; the other screens show the default not-connected account state.",
+  "app_version": "1.0.3",
+  "captured_at": "2026-10-09",
   "frozen": true,
   "main_logical_size": [
     1060,
@@ -52,19 +52,27 @@
     "app-channel-age.png": [
       1590,
       1110
+    ],
+    "app-account.png": [
+      1590,
+      1110
+    ],
+    "app-cookie.png": [
+      840,
+      1170
     ]
   },
   "screenshots": {
     "app-download.png": [
       "https://chzzk.naver.com/video/15063133",
       "https://chzzk.naver.com/video/15474788",
-      "https://chzzk.naver.com/video/12787899",
-      "https://chzzk.naver.com/video/14574876"
+      "https://chzzk.naver.com/video/14574876",
+      "https://chzzk.naver.com/video/12787899"
     ],
     "app-input.png": [
-      "https://chzzk.naver.com/video/14574878",
+      "https://chzzk.naver.com/video/12509845",
       "https://chzzk.naver.com/video/13427487",
-      "https://chzzk.naver.com/video/12509845"
+      "https://chzzk.naver.com/video/14574878"
     ],
     "app-multi.png": [
       "https://chzzk.naver.com/video/14574879",
@@ -86,6 +94,12 @@
     "app-channel.png synthetic thumbnails": [],
     "app-channel-age.png": [
       "fictional age/public examples; no download or authentication"
+    ],
+    "app-account.png": [
+      "fictional example accounts and photo; no cookie import, authentication or network"
+    ],
+    "app-cookie.png": [
+      "cookie connection dialog before consent; no file selected"
     ]
   }
 }
