@@ -1,73 +1,73 @@
 {
   "note": "Actual released EXE Qt UI. Current public SAKURA catalogue and public channel images, fetched without cookies. Jobs, progress, saved badges, new-video counts, live recording, space estimates, tools, update and age states are fictional examples. No media downloaded or broadcast recorded. Account names and avatar are fictional; no cookie import, authentication or account network requests. Other screens show the not-connected account state.",
-  "app_version": "1.0.7",
-  "captured_at": "2026-11-02",
+  "app_version": "1.0.8",
+  "captured_at": "2026-11-03",
   "frozen": true,
   "main_logical_size": [
-    1060,
-    740
+    1272,
+    888
   ],
   "scale": 1.5,
   "dimensions": {
     "app-download.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-input.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-multi.png": [
       960,
       662
     ],
     "app-quality.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-history.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-settings.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-favorites.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-channel.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-update.png": [
       960,
       900
     ],
     "app-tools.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-channel-age.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-account.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-cookie.png": [
       840,
       1170
     ],
     "app-live.png": [
-      1590,
-      1110
+      1908,
+      1332
     ],
     "app-settings-behavior.png": [
-      1590,
-      1110
+      1908,
+      1332
     ]
   },
   "screenshots": {
