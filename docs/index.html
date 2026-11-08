@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101412">
-  <meta name="description" content="ChzzkDownloader 1.0.9 — 여러 사이트의 영상 다운로드·이어받기, 라이브 녹화, 치지직 다시보기 채팅 저장, 구간 다운로드와 채널 새 영상 알림을 제공하는 Windows 다운로더.">
-  <title>ChzzkDownloader — 다시 보고 싶은 순간을, 내 폴더에</title>
+  <meta name="description" content="ChzzkDownloader 1.0.9 — 치지직 다시보기·클립·라이브와 YouTube·인스타그램·TVer 등 영상 주소를 붙여넣으면 MP4로 저장하는 Windows 다운로더. 라이브 녹화, 다시보기 채팅 저장, 구간 다운로드, 이어받기, 채널 새 영상 알림을 지원합니다.">
+  <title>ChzzkDownloader — 영상 주소를 붙여넣으면, MP4로 내 PC에</title>
   <link rel="icon" href="img/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
@@ -14,170 +14,183 @@
   <div class="reading-progress" aria-hidden="true"></div>
   <a class="skip" href="#main">본문으로 이동</a>
   <header class="header">
-    <a class="brand" href="#" aria-label="ChzzkDownloader 홈"><img src="img/logo.svg" width="36" height="36" alt=""><span>Chzzk<span class="brand-sub">Downloader</span></span></a>
-    <nav aria-label="주 메뉴"><a href="#overview">개요</a><a href="#start">시작</a><a href="#features">기능</a><a href="#preview">화면</a><a href="#channels">채널</a><a href="#account">계정</a><a href="#faq">FAQ</a><a href="#download">다운로드</a><a class="repo" href="https://github.com/deuxdoom/ChzzkDownloader"><span class="github-icon" aria-hidden="true"></span>GitHub <span aria-hidden="true">↗</span></a></nav>
+    <a class="brand" href="#" aria-label="ChzzkDownloader 홈"><img src="img/logo.svg" width="32" height="32" alt=""><span>Chzzk<span class="brand-sub">Downloader</span></span></a>
+    <nav aria-label="주 메뉴"><a href="#flow">사용 흐름</a><a href="#features">기능</a><a href="#start">시작하기</a><a href="#account">계정</a><a href="#faq">FAQ</a><a href="#download">다운로드</a><a class="repo" href="https://github.com/deuxdoom/ChzzkDownloader"><span class="github-icon" aria-hidden="true"></span>GitHub <span aria-hidden="true">↗</span></a></nav>
   </header>
-  <aside class="chapter-nav" aria-label="페이지 섹션"><a href="#overview" aria-label="개요"><span>개요</span></a><a href="#start" aria-label="시작"><span>시작</span></a><a href="#features" aria-label="기능"><span>기능</span></a><a href="#preview" aria-label="화면"><span>화면</span></a><a href="#channels" aria-label="채널"><span>채널</span></a><a href="#account" aria-label="계정"><span>계정</span></a><a href="#faq" aria-label="FAQ"><span>FAQ</span></a><a href="#download" aria-label="다운로드"><span>다운로드</span></a></aside>
+  <aside class="chapter-nav" aria-label="페이지 섹션"><a href="#overview" aria-label="소개"><span>소개</span></a><a href="#flow" aria-label="사용 흐름"><span>사용 흐름</span></a><a href="#features" aria-label="기능"><span>기능</span></a><a href="#start" aria-label="시작하기"><span>시작하기</span></a><a href="#account" aria-label="계정"><span>계정</span></a><a href="#faq" aria-label="FAQ"><span>FAQ</span></a><a href="#download" aria-label="다운로드"><span>다운로드</span></a></aside>
   <main id="main">
-    <section class="hero wrap" id="overview" data-chapter>
+    <section class="hero wrap" id="overview" data-chapter aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="dot"></span> CHZZK &amp; ANY VIDEO URL DOWNLOADER</p>
-        <h1>다시 보고 싶은 순간을,<br><em>내 폴더에.</em></h1>
-        <p class="lead">긴 다시보기도, 짧은 클립도.<br>링크를 붙여넣으면 나만의 영상 라이브러리가 시작됩니다.</p>
-        <div class="hero-actions"><a class="button primary" href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest" data-download><span class="github-icon" aria-hidden="true"></span>다운로드(.zip) <span aria-hidden="true">↓</span></a><a class="button secondary" href="#preview">화면 살펴보기 <span aria-hidden="true">↘</span></a></div>
-        <p class="availability">Windows 데스크톱 · 1.0.9 · 폴더형 포터블 앱</p>
-        <p class="availability"><a href="#security">실행할 때 보안 경고가 뜨나요? 경고별 확인 방법 ↗</a></p>
-        <p class="release-note"><code>ChzzkDownloader_v109.zip</code> · 2026-11-08 · 변환 전·완료 다시보기의 글로벌 CDN(베타)과 자동 다운로드의 영상·채팅 선택을 지원하며, 기록 정리 뒤에도 받음 상태를 유지합니다. <a href="https://github.com/deuxdoom/ChzzkDownloader/releases/tag/1.0.9">1.0.9 새 소식 ↗</a></p>
+        <p class="eyebrow"><span class="dot"></span> WINDOWS VIDEO DOWNLOADER</p>
+        <h1 id="hero-title">영상 주소를 붙여넣으면,<br><em>MP4로 내 PC에.</em></h1>
+        <p class="lead">치지직 다시보기·클립·라이브부터 YouTube·인스타그램·TVer까지. 사이트를 가리지 않고 영상을 받는 Windows 다운로더입니다.</p>
+        <ul class="hero-tags" aria-label="주요 기능"><li>다시보기·클립</li><li>라이브 녹화</li><li>채팅 저장</li><li>구간 다운로드</li><li>이어받기</li><li>새 영상 알림</li></ul>
+        <div class="hero-actions"><a class="button primary" href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest" data-download><span class="github-icon" aria-hidden="true"></span>다운로드(.zip) <span aria-hidden="true">↓</span></a><a class="button secondary" href="#features">기능 살펴보기 <span aria-hidden="true">↘</span></a></div>
+        <p class="availability">Windows 10·11 (x64) · 설치 없이 압축을 풀어 실행 · 1.0.9</p>
+        <p class="release-note">2026-11-08 · 다시보기 글로벌 CDN(베타), 새 영상 자동 다운로드의 받을 내용 선택 <a href="https://github.com/deuxdoom/ChzzkDownloader/releases/tag/1.0.9">1.0.9 새 소식 ↗</a> · <a href="#security">실행할 때 보안 경고가 뜨나요?</a></p>
       </div>
-      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><img src="img/logo.svg" width="256" height="256" alt=""><span class="art-label">KEEP THE MOMENT.</span></div>
+      <figure class="hero-shot">
+        <div class="hero-glow" aria-hidden="true"></div><div class="orbit" aria-hidden="true"></div>
+        <div class="hero-device"><div class="hero-float"><img src="img/app-download.png" width="1908" height="1332" fetchpriority="high" alt="ChzzkDownloader 다운로드 화면. 위쪽에 영상 주소 입력칸과 다중 다운로드·다운로드 버튼, 구간만 받기·받을 내용 선택이 있고, 아래 다운로드 목록에 대기·다운로드 중·완료 영상 카드가 차례로 보입니다."></div></div>
+        <span class="floating-chip hero-chip-a" aria-hidden="true">치지직 · YouTube · TVer …</span>
+        <span class="floating-chip hero-chip-b" aria-hidden="true">62% · 16.3 MB/s</span>
+        <span class="floating-chip hero-chip-c" aria-hidden="true">MP4 · 원본 유지</span>
+        <figcaption>실제 1.0.9 배포 EXE 화면 · 영상 정보는 공개 목록에서 가져왔고, 진행·완료 상태는 소개용 예시입니다.</figcaption>
+      </figure>
     </section>
 
-    <section class="guide wrap" id="start" data-chapter aria-labelledby="guide-title">
-      <div class="guide-heading"><p class="eyebrow">THREE STEPS. YOUR LIBRARY.</p><h2 id="guide-title">시작하기</h2></div>
-      <ol class="steps"><li><span class="step-number">1</span><div><h3>프로그램 열기</h3><p><code>ChzzkDownloader_v109.zip</code>을 풀고 폴더 구조를 유지한 채 <code>ChzzkDownloader.exe</code>를 실행합니다. <code>lib</code>·<code>bin</code> 폴더는 EXE와 함께 두세요.</p></div></li><li><span class="step-number">2</span><div><h3>저장 위치와 옵션 고르기</h3><p>사이드바 맨 아래 ‘설정’에서 저장 위치·화질·인코딩·파일 이름·채널별 폴더·속도 제한을 정합니다. 저장 위치는 다음 실행에도 유지됩니다. 필요하면 같은 화면에서 치지직 계정도 연결하세요.</p></div></li><li><span class="step-number">3</span><div><h3>주소 붙여넣고 다운로드</h3><p>영상 주소를 붙여넣고 ‘다운로드’를 누르세요. 여러 영상은 ‘다중 다운로드’ 창에 한 줄씩 넣습니다. 필요하면 ‘받을 내용’에서 영상·채팅만·영상 + 채팅을 고르거나 ‘구간만 받기’로 시작·끝을 정하세요.</p></div></li></ol>
-    </section>
-
-    <section class="story" id="features" data-chapter aria-label="기능 스크롤 소개">
+    <section class="story" id="flow" data-chapter aria-label="사용 흐름 스크롤 소개">
       <div class="story-sticky wrap">
         <div class="story-copy">
-          <p class="eyebrow">BUILT FOR YOUR MOMENTS.</p>
+          <p class="eyebrow">HOW IT WORKS</p>
           <div class="story-slides">
-            <article class="story-slide is-active" data-slide="0"><span class="story-number">01 — COLLECT</span><h2>붙여넣는 순간.<br><em>라이브러리의 시작.</em></h2><p>한 개의 링크부터 여러 개의 다시보기까지.<br>‘다중 다운로드’에 한 줄씩 넣고,<br>입력한 순서대로 목록에 추가하세요.</p></article>
-            <article class="story-slide" data-slide="1"><span class="story-number">02 — MAKE IT YOURS</span><h2>화질도. 코덱도.<br><em>원하는 대로.</em></h2><p>원본 그대로의 MP4. 또는 CPU와 NVIDIA NVENC.<br>H.264와 H.265로 나에게 맞는 보관 방식을 선택하세요.</p></article>
-            <article class="story-slide" data-slide="2"><span class="story-number">03 — KEEP GOING</span><h2>창은 작게.<br><em>다운로드는 계속.</em></h2><p>트레이에서 대기열을 제어하고, 끝난 작업은 다운로드 기록에서 다시 찾으세요.<br>새 버전은 별도 업데이트 창에서 안전하게 이어집니다.</p></article>
+            <article class="story-slide is-active" data-slide="0"><span class="story-number">01 — PASTE</span><h2>주소를 붙여넣고,<br><em>다운로드.</em></h2><p>영상 주소를 넣고 ‘다운로드’를 누르면 목록에 추가됩니다.<br>여러 개는 ‘다중 다운로드’에 한 줄씩 넣고,<br>필요하면 구간이나 채팅도 함께 고르세요.</p></article>
+            <article class="story-slide" data-slide="1"><span class="story-number">02 — PICK</span><h2>즐겨찾는 채널에서,<br><em>골라 받기.</em></h2><p>채널을 열면 다시보기가 썸네일 카드로 펼쳐집니다.<br>이미 받은 영상은 배지로 구분되니<br>원하는 영상만 선택해 받으세요.</p></article>
+            <article class="story-slide" data-slide="2"><span class="story-number">03 — KEEP</span><h2>받은 영상은,<br><em>기록에서 다시.</em></h2><p>완료한 영상은 바로 재생하거나 폴더를 엽니다.<br>실패·취소한 영상은 기록에서 재시도하면<br>받은 부분부터 이어받습니다.</p></article>
           </div>
-          <div class="story-pagination" aria-label="기능 슬라이드"><button aria-label="링크 입력 기능" data-go="0" class="is-active"></button><button aria-label="인코딩 설정 기능" data-go="1"></button><button aria-label="트레이와 업데이트 기능" data-go="2"></button></div>
+          <div class="story-pagination" aria-label="사용 흐름 단계"><button aria-label="주소 붙여넣기" data-go="0" class="is-active"></button><button aria-label="채널에서 골라 받기" data-go="1"></button><button aria-label="다운로드 기록" data-go="2"></button></div>
           <span class="scroll-hint">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span>
         </div>
         <div class="story-art" aria-hidden="true">
           <div class="story-glow"></div>
-          <div class="story-device"><img class="story-image library" src="img/app-input.png" width="1908" height="1332" alt=""><img class="story-image preferences" src="img/app-quality.png" width="1908" height="1332" alt=""><img class="story-image background" src="img/app-history.png" width="1908" height="1332" alt=""></div>
-          <span class="floating-chip chip-a">MP4 · YOUR LIBRARY</span><span class="floating-chip chip-b">1080p · 60 fps</span><span class="floating-chip chip-c">CPU / NVIDIA NVENC</span>
+          <div class="story-device"><img class="story-image" src="img/app-input.png" width="1908" height="1332" alt=""><img class="story-image" src="img/app-channel.png" width="1908" height="1332" loading="lazy" alt=""><img class="story-image" src="img/app-history.png" width="1908" height="1332" loading="lazy" alt=""></div>
+          <span class="floating-chip chip-a">ANY VIDEO URL</span><span class="floating-chip chip-b">1080p · MP4</span><span class="floating-chip chip-c">받음 · 채팅 받음</span>
         </div>
       </div>
     </section>
 
-    <section class="features wrap" id="details" aria-labelledby="features-title">
-      <p class="eyebrow">SMALL DETAILS. BETTER DOWNLOADS.</p>
-      <h2 id="features-title">다운로드는 간단하게.<br>관리는 꼼꼼하게.</h2>
-      <div class="feature-grid">
-        <article class="feature"><span class="feature-no">01 / INPUT</span><h3>링크만 있으면 준비 끝.</h3><p>치지직 VOD·클립은 물론 YouTube·인스타그램·TVer 등 어떤 사이트의 영상 주소든 붙여넣으세요. ‘다중 다운로드’ 창에 주소를 한 줄씩 넣어 한 번에 추가하거나, 브라우저에서 끌어놓을 수 있습니다.</p><span class="pill">ANY VIDEO URL</span></article>
-        <article class="feature"><span class="feature-no">02 / QUALITY</span><h3>내가 고른 화질과 형식.</h3><p>최고 화질 또는 원하는 해상도 상한을 선택하세요. MP4로 저장합니다. 원본 유지 또는 CPU/NVIDIA NVENC 인코딩, H.264(AVC)/H.265(HEVC)를 선택하세요.</p><span class="pill">MP4 · AVC / HEVC</span></article>
-        <article class="feature"><span class="feature-no">03 / SPEED</span><h3>인터넷 속도도 나눠 쓰기.</h3><p>최대 4개 영상·영상당 최대 16개 조각을 동시에 받으며, 영상 한 개당 속도 상한을 1~50 MB/s로 정할 수 있습니다. 여러 영상의 합계는 동시 영상 수만큼 늘어날 수 있고, 라이브·구간 다운로드에는 제한이 적용되지 않을 수 있습니다.</p><span class="pill">PARALLEL · RATE LIMIT</span></article>
-        <article class="feature"><span class="feature-no">04 / HISTORY</span><h3>완료 영상은 바로 재생.</h3><p>이번 실행의 완료 영상은 다운로드 목록에서 재생하거나 더블클릭하세요. ‘완료 항목 정리’로 숨겨도 영상과 기록은 남습니다. 이전 실행의 작업·실패·취소 항목은 다운로드 기록에서 확인합니다.</p><span class="pill">DOWNLOAD HISTORY</span></article>
-        <article class="feature"><span class="feature-no">05 / RESUME</span><h3>중단한 부분부터 이어받기.</h3><p>취소·실패한 영상은 받은 부분을 보관하고 재시도·같은 주소 추가·재실행 후 대기열 재개 시 이어받습니다. 일시적인 연결 오류는 두 번까지 자동 재시도합니다. 복원된 대기열은 ‘대기열 계속’을 누를 때 시작하며, 라이브·구간 다운로드는 이어받지 않습니다.</p><span class="pill">RESUME · AUTO RETRY</span></article>
-        <article class="feature"><span class="feature-no">06 / YOUR FILES</span><h3>파일 이름도, 폴더도 원하는 대로.</h3><p>제목에 게시 날짜·채널을 넣는 네 가지 파일 이름 규칙과 채널별 폴더를 선택하세요. 날짜는 PC 현지 날짜 기준이며, 같은 이름에는 번호를 붙입니다. 새로 대기열에 넣는 작업부터 적용됩니다.</p><span class="pill">FILE NAMES · CHANNEL FOLDERS</span></article>
-        <article class="feature"><span class="feature-no">07 / BACKGROUND</span><h3>트레이에서 이어가기.</h3><p>창을 숨겨도 다운로드는 계속됩니다. 트레이 메뉴에서 대기열을 멈추거나 재개하고, 완료 알림으로 다시 돌아오세요.</p><span class="pill">SYSTEM TRAY</span></article>
-        <article class="feature"><span class="feature-no">08 / UPDATES</span><h3>새 버전으로 자연스럽게.</h3><p>새 버전의 추가·변경·수정 내역을 먼저 보여 줍니다. ‘지금 업데이트’를 선택하면 다운로드가 끝난 뒤 같은 프로그램의 독립 업데이트 모드가 배포 파일을 검증하고 프로그램을 교체합니다.</p><span class="pill">INDEPENDENT UPDATER</span></article>
-        <article class="feature"><span class="feature-no">09 / ENCODING</span><h3>빠르게, 또는 가볍게.</h3><p>원본 유지가 기본입니다. 변환이 필요할 때 CPU/NVENC와 AVC/HEVC를 선택하세요. 변환 실패·취소 시 다운로드한 원본은 보존합니다.</p><span class="pill">AVC / HEVC</span></article>
-        <article class="feature"><span class="feature-no">10 / FAVORITES</span><h3>받은 영상과 채팅을 한눈에.</h3><p>전체 영상·다시보기·업로드·클립을 골라 최신순·인기순으로 정렬하세요. ‘받음’·‘채팅 받음’·‘영상·채팅 받음’을 구분하고, ‘받지 않은 영상만 선택’으로 아직 안 받은 영상을 고를 수 있습니다.</p><span class="pill">CHANNEL VIEWS · SAVED BADGES</span></article>
-        <article class="feature"><span class="feature-no">11 / TOOLS</span><h3>영상 도구도 간편하게.</h3><p>첫 실행에 FFmpeg·ffprobe와 yt-dlp nightly를 받고, 시작할 때마다 확인해 없거나 손상되었으면 자동으로 다시 준비합니다. 작업이 끝난 뒤 설정의 ‘도구 업데이트’를 누르면 바뀌었거나 손상된 도구만 검증해 교체합니다. 이미 최신인 도구는 다시 받지 않습니다.</p><span class="pill">FFMPEG · YT-DLP NIGHTLY</span></article>
-        <article class="feature"><span class="feature-no">12 / DUPLICATES</span><h3>주소가 달라도 같은 영상이면.</h3><p>공유 주소·모바일 주소처럼 형태가 달라도 같은 영상이면 다시 받을지 확인합니다. 기록 화면의 최근 500개 밖에 있는 영상도 기억하며, 대기·진행 중인 영상은 중복 추가하지 않습니다.</p><span class="pill">VIDEO IDENTITY CHECK</span></article>
-        <article class="feature"><span class="feature-no">13 / LOGS</span><h3>필요한 로그만 펼쳐 보기.</h3><p>‘완료 항목 정리’ 오른쪽의 로그 버튼으로 열고 닫습니다. 카드 선택이나 작업 필터로 원하는 로그만 확인하며, 스크롤바 때문에 버튼과 카드가 좌우로 밀리지 않습니다.</p><span class="pill">JOB LOG FILTER</span></article>
-        <article class="feature"><span class="feature-no">14 / ACCOUNT</span><h3>치지직 계정은 쿠키로 연결.</h3><p>평소 브라우저에서 내보낸 cookies.txt를 가져오면 아이디·비밀번호 입력 없이 계정을 연결합니다. 로그인 쿠키 두 개만 내 PC에 암호화 저장하고 다시 실행해도 유지합니다. 본인·성인 인증된 계정이라면 그 계정의 시청 권한으로 19세 영상도 받을 수 있습니다.</p><span class="pill">COOKIES.TXT LOGIN</span></article>
-        <article class="feature"><span class="feature-no">15 / PROFILES</span><h3>여러 계정도 프로필로.</h3><p>다른 계정의 쿠키를 가져오면 프로필로 추가합니다. 설정 위의 프로필 사진·이름에서 계정을 전환하고, 팔로잉 채널은 즐겨찾기에 자동으로 추가합니다. 즐겨찾기와 순서는 계정마다 따로 유지합니다.</p><span class="pill">MULTI PROFILES</span></article>
-        <article class="feature"><span class="feature-no">16 / CHAT</span><h3>채팅도 함께 보관하기.</h3><p>치지직 다시보기의 채팅을 오프라인 HTML 한 파일로 저장하세요. 닉네임을 누르면 그 사용자의 채팅만 보고, 검색·사용자별 요약에서 구독·후원·가림 상태를 확인할 수 있습니다. 닉네임을 바꿔도 같은 사용자 ID로 모입니다.</p><span class="pill">VOD CHAT · OFFLINE HTML</span></article>
-        <article class="feature"><span class="feature-no">17 / SECTIONS</span><h3>긴 영상에서 필요한 구간만.</h3><p>주소를 넣기 전에 ‘구간만 받기’를 켜고 시작·끝을 입력하세요. 끝을 비우면 영상 끝까지 받습니다. 재인코딩 없이 잘라 몇 초 차이가 날 수 있으며, 채널 화면의 일괄 선택에는 적용되지 않습니다.</p><span class="pill">START · END</span></article>
-        <article class="feature"><span class="feature-no">18 / LIVE</span><h3>라이브는 녹화하고, 중지하면 저장.</h3><p>라이브 방송 주소를 넣어 녹화하세요. 경과 시간·녹화 크기·남은 공간으로 녹화 가능한 시간을 표시하고, 중지·연결 끊김·남은 공간 1GB 미만일 때 지금까지의 녹화를 저장합니다. 일부 구간이 빠지면 설정에서 글로벌 CDN(베타)으로 바꿔 녹화할 수 있습니다.</p><span class="pill">LIVE RECORDING</span></article>
-        <article class="feature"><span class="feature-no">19 / NEW VIDEOS</span><h3>즐겨찾는 채널의 새 소식.</h3><p>설정에서 새 영상 확인을 켜면 정한 간격(1~24시간, 기본 1시간)마다 확인해 배지와 트레이로 알립니다. ‘새 영상 자동 다운로드’를 켠 채널은 이미 받은 영상을 건너뛰고 새 영상만 대기열에 넣습니다. 처음 확인한 기존 영상은 알리지 않습니다.</p><span class="pill">NOTIFY · AUTO DOWNLOAD</span></article>
-        <article class="feature"><span class="feature-no">20 / SPACE &amp; ERRORS</span><h3>받기 전에 공간부터.</h3><p>영상 크기를 알 수 있으면 동시에 받는 영상이 쓸 공간까지 계산해 부족할 때 전송 전에 알려 줍니다. 실패하면 원인과 다음 조치를 한국어로 안내하고, 카드의 상태 문구에 마우스를 올리면 전체 원문도 확인할 수 있습니다.</p><span class="pill">SPACE CHECK · ERROR GUIDANCE</span></article>
-        <article class="feature"><span class="feature-no">21 / CACHE</span><h3>미리보기 캐시도 가볍게.</h3><p>설정에서 썸네일 캐시 사용량을 확인하고 비울 수 있습니다. 프로그램을 시작하면 기록에 더 이상 없는 영상의 캐시는 자동으로 정리하며, 저장한 영상과 다운로드 기록은 유지합니다.</p><span class="pill">THUMBNAIL CACHE</span></article>
+    <section class="features wrap" id="features" data-chapter aria-labelledby="features-title">
+      <div class="section-head"><p class="eyebrow">FEATURES</p><h2 id="features-title">받고, 녹화하고,<br>모아 두는 데 필요한 것.</h2><p>기능마다 실제 앱 화면에서 해당 부분만 크게 보여 드립니다.</p></div>
+      <div class="bento">
+        <article class="tile wide">
+          <div class="tile-copy"><div><span class="tile-tag">LIVE</span><h3>라이브는 녹화하고,<br>중지하면 저장.</h3></div><p>방송 주소를 넣으면 그 시점부터 녹화합니다. 경과 시간·녹화 크기와 남은 공간으로 더 녹화할 수 있는 시간을 보여 주고, 중지하거나 연결이 끊기면 지금까지 녹화한 부분을 MP4로 저장합니다. 녹화 중에도 다른 영상을 함께 받을 수 있습니다.</p></div>
+          <div class="tile-shot"><img src="img/feature-live.png" width="1474" height="174" loading="lazy" alt="다운로드 목록의 라이브 녹화 카드. 라이브 녹화 중 1:24:36, 5.3 GB, 남은 공간 약 18시간과 녹화 중지 버튼이 보입니다."></div>
+        </article>
+        <article class="tile">
+          <div class="tile-copy"><div><span class="tile-tag">MULTI</span><h3>여러 영상은 한 줄씩.</h3></div><p>‘다중 다운로드’ 창에 주소를 한 줄에 하나씩 넣으면 입력한 순서대로 받습니다. 사이트가 섞여 있어도 괜찮습니다.</p></div>
+          <div class="tile-shot"><img class="fade-bottom" src="img/feature-multi.png" width="928" height="296" loading="lazy" alt="여러 영상 한 번에 받기 창에 치지직·YouTube·TVer 주소를 한 줄씩 입력한 모습."></div>
+        </article>
+        <article class="tile">
+          <div class="tile-copy"><div><span class="tile-tag">NEW VIDEOS</span><h3>즐겨찾는 채널의 새 영상.</h3></div><p>정한 간격(1~24시간)마다 새 영상을 확인해 배지와 트레이 알림으로 알려 줍니다. 원하는 채널은 새 영상을 자동으로 받습니다.</p></div>
+          <div class="tile-shot stack"><img src="img/feature-watch.png" width="784" height="64" loading="lazy" style="max-width:523px" alt="설정의 즐겨찾기 채널의 새 영상 확인 항목. 1시간마다, 받을 내용 영상."><img src="img/feature-favorites.png" width="1008" height="280" loading="lazy" alt="저장한 채널 카드 중 풍월량 카드에 새 영상 2 배지가 붙은 모습."></div>
+        </article>
+        <article class="tile wide">
+          <div class="tile-copy"><div><span class="tile-tag">SECTION · CHAT</span><h3>필요한 구간만,<br>채팅까지 함께.</h3></div><p>‘구간만 받기’에 시작·끝을 넣으면 그 부분만 받고, ‘받을 내용’에서 영상·채팅만·영상 + 채팅을 고를 수 있습니다. 치지직 다시보기 채팅은 인터넷 없이 열리는 HTML 한 파일로 저장되며, 닉네임을 누르면 그 사용자의 채팅만 모아 봅니다.</p></div>
+          <div class="tile-shot"><img src="img/feature-section.png" width="1500" height="252" loading="lazy" alt="새 다운로드 입력란. 치지직 다시보기 주소, 구간만 받기 1:00:00~1:30:00, 받을 내용 영상 + 채팅이 선택되어 있습니다."></div>
+        </article>
+        <article class="tile">
+          <div class="tile-copy"><div><span class="tile-tag">ACCOUNT</span><h3>19세·구독자 영상은 계정으로.</h3></div><p>치지직 계정을 연결하면 그 계정의 시청 권한으로 받습니다. 연령 확인이 필요한 영상은 19 배지로 미리 구분합니다.</p></div>
+          <div class="tile-shot"><img src="img/feature-age.png" width="1000" height="372" loading="lazy" alt="채널 화면의 영상 카드 두 개. 연령 확인이 필요한 영상에는 오른쪽 위에 빨간색 19 배지가 있고, 공개 영상에는 없습니다."></div>
+        </article>
+        <article class="tile">
+          <div class="tile-copy"><div><span class="tile-tag">QUALITY</span><h3>원본 그대로, 또는 가볍게.</h3></div><p>기본은 받은 그대로의 MP4입니다. 용량을 줄이고 싶을 때만 CPU·NVIDIA NVENC와 H.264·H.265 변환을 고르세요.</p></div>
+          <div class="tile-shot"><img class="fade-right" src="img/feature-quality.png" width="880" height="270" loading="lazy" alt="설정의 영상 변환 카드. 변환 방식 NVIDIA NVENC, 영상 코덱 H.265(HEVC)를 선택한 모습."></div>
+        </article>
+        <article class="tile wide">
+          <div class="tile-copy"><div><span class="tile-tag">SETTINGS</span><h3>저장 방식은 한 번만.</h3></div><p>저장 위치·화질·파일 이름(날짜·채널·제목)·채널별 폴더·동시 다운로드·영상당 속도 제한을 정해 두면, 그다음부터는 붙여넣기만 하면 됩니다. 일부 구간이 빠지는 환경이라면 ‘치지직 CDN’을 글로벌(베타)로 바꿔 볼 수 있습니다.</p></div>
+          <div class="tile-shot"><img src="img/feature-settings.png" width="1500" height="534" loading="lazy" alt="설정의 저장·다운로드 카드. 저장 위치, 화질 최고 화질, 파일 이름 날짜 + 채널 + 제목과 채널별 폴더에 저장, 동시 다운로드 2개 영상·영상당 8개 조각, 속도 제한 영상당 최대 10 MB/s, 치지직 CDN 기본 CDN(베타)이 보입니다."></div>
+        </article>
+        <article class="tile wide split">
+          <div class="tile-copy"><div><span class="tile-tag">UPDATE</span><h3>새 버전은 검증한 뒤 교체.</h3></div><p>시작할 때 새 버전을 확인하고 변경 내역을 먼저 보여 줍니다. ‘지금 업데이트’를 고르면 진행 중인 다운로드가 끝난 뒤 파일을 SHA-256으로 검증해 교체하고, 실패하면 원래대로 되돌립니다. 저장한 영상·기록·설정·계정은 그대로입니다.</p></div>
+          <div class="tile-shot"><img src="img/feature-update.png" width="900" height="268" loading="lazy" alt="업데이트 창의 위쪽. 1.0.9 버전을 준비합니다, 새 버전을 내려받는 중 35.1 MB / 56.6 MB, 다운로드·검증·종료 대기·교체·재시작 단계가 보입니다."></div>
+        </article>
+      </div>
+      <div class="extras"><h3>그 밖에도</h3><ul><li>끊긴 다운로드 이어받기·자동 재시도</li><li>주소가 달라도 같은 영상이면 중복 확인</li><li>받기 전에 저장 공간 확인</li><li>실패 원인을 한국어로 안내</li><li>창을 닫아도 트레이에서 계속 받기</li><li>FFmpeg·yt-dlp 자동 준비</li><li>여러 계정 프로필 전환</li><li>썸네일 캐시 정리</li></ul></div>
+      <p class="caption">모든 화면은 실제 1.0.9 배포 EXE에서 캡처했고, 기능마다 해당 부분만 잘라 보여 줍니다. 진행·녹화 상태, 저장 배지, 새 영상 개수, 19세 표시, 업데이트 진행률은 소개용 예시입니다.</p>
+    </section>
+
+    <section class="start wrap" id="start" data-chapter aria-labelledby="start-title">
+      <div class="section-head"><p class="eyebrow">THREE STEPS</p><h2 id="start-title">세 단계면 시작합니다.</h2></div>
+      <ol class="steps">
+        <li><span class="step-number">1</span><h3>압축을 풀고 실행</h3><p>받은 ZIP을 풀고 <code>ChzzkDownloader.exe</code>를 실행하세요. 함께 들어 있는 lib·bin 폴더는 EXE 옆에 그대로 둡니다. 필요한 영상 도구는 첫 실행에 자동으로 준비합니다.</p></li>
+        <li><span class="step-number">2</span><h3>저장 위치 정하기</h3><p>사이드바 맨 아래 ‘설정’에서 저장 위치·화질·파일 이름을 정합니다. 한 번 정하면 다음 실행에도 유지됩니다.</p></li>
+        <li><span class="step-number">3</span><h3>주소 붙여넣기</h3><p>영상 주소를 붙여넣고 ‘다운로드’를 누르세요. 브라우저에서 주소를 끌어다 놓아도 됩니다.</p></li>
+      </ol>
+    </section>
+
+    <section class="account wrap" id="account" data-chapter aria-labelledby="account-title">
+      <div class="account-copy">
+        <p class="eyebrow">YOUR ACCOUNT · YOUR PC</p>
+        <h2 id="account-title">치지직 계정은 쿠키 파일로,<br>저장은 내 PC에만.</h2>
+        <p>아이디·비밀번호를 입력하지 않습니다. 평소 브라우저에서 치지직에 로그인한 뒤 내보낸 cookies.txt를 가져오면 계정이 연결되고, 팔로잉 채널이 즐겨찾기에 자동으로 추가됩니다.</p>
+        <ol class="account-steps">
+          <li>브라우저에 Get cookies.txt LOCALLY를 설치하고 치지직에 로그인합니다.</li>
+          <li><code>https://chzzk.naver.com/</code>에서 확장 프로그램의 왼쪽 첫 번째 Export를 눌러 <code>chzzk.naver.com_cookies.txt</code>를 저장합니다.</li>
+          <li>앱의 ‘설정 → 치지직 계정 → 쿠키 파일 가져오기’에서 저장에 동의하고 파일을 선택한 뒤 ‘가져오고 연결’을 누릅니다.</li>
+        </ol>
+        <ul class="checks">
+          <li>로그인 쿠키 NID_AUT·NID_SES 두 개만 Windows 사용자 계정에 묶어 암호화 저장합니다.</li>
+          <li>개발자나 별도 수집 서버로 전송하지 않습니다. 인증 쿠키는 네이버·치지직 인증과 영상 조회에 전달됩니다.</li>
+          <li>여러 계정은 프로필로 저장하고, 사이드바의 프로필에서 전환합니다. 즐겨찾기는 계정마다 따로 유지합니다.</li>
+        </ul>
+        <p class="muted">실제 1.0.9 화면 · 계정 이름과 사진은 소개용 예시입니다. 19세 영상은 본인·성인 인증된 계정의 시청 권한이 있어야 받을 수 있습니다. 가져온 쿠키 파일은 프로그램이 수정·삭제하지 않으므로 연결 후 필요 없으면 직접 삭제하세요. 쿠키가 만료되면 다시 가져와야 하며 영구 로그인을 보장하지 않습니다.</p>
+      </div>
+      <div class="account-visual">
+        <div class="account-dialog"><img src="img/app-cookie.png" width="840" height="1170" loading="lazy" alt="브라우저 쿠키로 치지직 계정 연결 창. 내 PC에만 암호화 저장한다는 안내, 확장 프로그램의 첫 번째 Export 버튼을 가리키는 안내 이미지, 저장 동의 체크와 파일 선택·가져오고 연결 버튼이 보입니다."></div>
+        <div class="account-menu"><img src="img/feature-account.png" width="300" height="456" loading="lazy" alt="사이드바 프로필 버튼에서 연 계정 메뉴. 저장된 계정 제목 아래 예시 계정(현재)과 예시 계정 2, 치지직 채널 열기·로그아웃·새 계정 추가 항목이 있습니다."></div>
       </div>
     </section>
 
-    <section class="preview wrap" id="preview" data-chapter aria-labelledby="preview-title">
-      <div class="preview-top"><div><p class="eyebrow">A CALMER WAY TO DOWNLOAD</p><h2 id="preview-title">필요한 것만, 한눈에.</h2></div><span class="version-tag">ChzzkDownloader 1.0.9</span></div>
-      <div class="screen"><img src="img/app-download.png" width="1908" height="1332" alt="ChzzkDownloader의 다운로드 화면. 왼쪽 사이드바에 다운로드·다운로드 기록·채널 즐겨찾기와 맨 아래 다운로드 폴더·계정 연결·설정, 오른쪽에 주소 입력·다중 다운로드 버튼과 위에서부터 대기·다운로드 중·완료 영상 카드가 보입니다. 완료 카드는 재생할 수 있습니다." fetchpriority="high"></div>
-      <p class="caption">실제 1.0.9 배포 EXE 화면 · 영상 정보는 현재 공개 목록에서 가져왔고, 다운로드·저장 상태는 소개용 예시입니다. 메인 창 오른쪽 아래의 흰색 GitHub 아이콘만 저장소 링크이며, 버전 숫자는 일반 표시입니다.</p>
-    </section>
+    <section class="faq wrap" id="faq" data-chapter aria-labelledby="faq-title">
+      <div class="section-head"><p class="eyebrow">FAQ</p><h2 id="faq-title">궁금한 점이 있다면.</h2></div>
 
-    <section class="settings wrap" aria-labelledby="section-title">
-      <div class="settings-copy"><p class="eyebrow">VIDEO. CHAT. JUST THE PART YOU NEED.</p><h2 id="section-title">영상도, 채팅도.<br>필요한 방식으로.</h2><p>다운로드 화면의 ‘받을 내용’에서 영상·채팅만·영상 + 채팅을 선택하세요. 치지직 다시보기 채팅은 오프라인 HTML 한 파일로 저장되며 닉네임을 누르면 그 사용자의 채팅만 볼 수 있습니다. 닉네임 옆 ↗는 채널을 열고, 검색창에는 채널 주소나 ID도 넣을 수 있습니다.</p><p>‘구간만 받기’를 켜고 시작·끝을 입력하면 주소 입력·다중 다운로드에 적용됩니다. 한 번 추가하면 체크가 풀리고, 끝을 비우면 영상 끝까지 받습니다. 영상 + 채팅에서는 영상만 잘라 받고 채팅은 전체를 저장합니다.</p><p class="muted">실제 1.0.9 화면 · 작업과 진행 상태는 소개용 예시입니다. 채팅은 치지직 다시보기만 지원하며 라이브·클립·다른 사이트의 채팅은 받을 수 없습니다. 구간은 재인코딩 없이 잘라 몇 초 차이가 날 수 있습니다.</p></div>
-      <div class="settings-screen"><img src="img/app-input.png" width="1908" height="1332" loading="lazy" alt="구간만 받기에서 1:00:00~1:30:00과 받을 내용에서 영상 + 채팅을 선택한 1.0.9 화면."></div>
-    </section>
-
-    <section class="settings wrap" aria-labelledby="live-title">
-      <div class="settings-copy"><p class="eyebrow">RECORD NOW. KEEP IT LATER.</p><h2 id="live-title">라이브를 녹화하고,<br>중지하면 저장.</h2><p>방송 주소를 넣으면 그 시점부터 녹화합니다. 동시 다운로드 수에 포함되지 않아 다른 영상을 함께 받을 수 있고, 카드에 경과 시간·녹화 크기와 남은 공간으로 더 녹화할 수 있는 시간을 표시합니다. 중지하거나 연결이 끊기면 지금까지 녹화한 부분을 MP4로 저장합니다.</p><p class="muted">실제 1.0.9 화면 · 녹화 상태·용량·남은 시간은 소개용 예시입니다. 1080p60 기준 시간당 약 3.8GB, 10시간 약 38GB가 필요하며 화질에 따라 달라집니다. MP4 정리에는 녹화 크기만큼 여유 공간이 더 필요합니다. 남은 공간이 1GB 아래로 줄면 멈추고 저장하며, 정리할 공간이 없거나 MP4 변환에 실패하면 TS로 보존합니다. 재실행 복원·이어받기는 하지 않습니다.</p></div>
-      <div class="settings-screen"><img src="img/app-live.png" width="1908" height="1332" loading="lazy" alt="라이브 녹화 중 경과 시간·녹화 용량·남은 공간으로 더 녹화할 수 있는 시간을 보여 주는 예시."></div>
-    </section>
-
-    <section class="settings wrap" aria-labelledby="watch-title">
-      <div class="settings-copy"><p class="eyebrow">NEW VIDEOS. LESS CHECKING.</p><h2 id="watch-title">새 영상은 알려 주고,<br>캐시는 가볍게.</h2><p>‘설정 → 프로그램 동작 → 즐겨찾기 채널의 새 영상 확인’을 켜고 간격을 1~24시간으로 입력하면 새 영상 개수와 트레이 알림을 받을 수 있습니다. 간격 옆의 ‘받을 내용’에서 영상·채팅만·영상 + 채팅을 고르고, 자동으로 받을 채널은 채널 화면의 ‘새 영상 자동 다운로드’도 켜세요. 이미 받았거나 대기·진행 중인 내용은 건너뛰고 영상·채팅 중 빠진 내용만 대기열에 추가합니다.</p><p>같은 설정 카드에서 썸네일 캐시 사용량을 확인하거나 ‘캐시 비우기’를 누를 수 있습니다. 기록과 영상 파일은 유지되며, 시작할 때 기록에 더 이상 없는 영상의 캐시도 자동 정리합니다.</p><p class="muted">새 영상 확인은 기본 꺼짐입니다. 처음 확인한 기존 영상은 알리거나 자동으로 받지 않습니다. 설정을 켜면 시작 1분 뒤부터 확인하고 이후 입력한 간격(기본 1시간)마다 확인합니다.</p></div>
-      <div class="settings-screen"><img src="img/app-settings-behavior.png" width="1908" height="1332" loading="lazy" alt="즐겨찾기 채널 새 영상 확인 간격과 자동 다운로드의 받을 내용 선택, 썸네일 캐시 사용량·캐시 비우기, 프로그램·도구 업데이트 설정."></div>
-    </section>
-
-    <section class="settings wrap" id="multi-download" aria-labelledby="multi-title">
-      <div class="settings-copy"><p class="eyebrow">MORE LINKS. ONE LIST.</p><h2 id="multi-title">여러 영상도,<br>한 줄씩 간단하게.</h2><p>다운로드 화면의 ‘다중 다운로드’를 누르고 주소를 한 줄에 하나씩 넣으세요. 주소 개수를 확인한 뒤 ‘다운로드 (개수)’를 누르면 입력한 순서대로 목록에 추가됩니다.</p><p class="muted">입력 안의 중복 주소와 주소가 아닌 줄은 건너뜁니다. 이미 받은 영상은 주소 형태가 달라도 다시 다운로드할지 먼저 확인합니다. TVer는 일본 VPN에 연결한 뒤 받아야 하며 다운로드가 끝날 때까지 연결을 유지하세요.</p></div>
-      <div class="settings-screen"><img src="img/app-multi.png" width="960" height="662" loading="lazy" alt="다중 다운로드 창. 여러 사이트의 영상 주소를 한 줄씩 입력하고 주소 개수와 다운로드 버튼을 확인합니다."></div>
-    </section>
-
-    <section class="settings wrap" id="settings" aria-labelledby="settings-title">
-      <div class="settings-copy"><p class="eyebrow">SET IT ONCE.</p><h2 id="settings-title">취향에 맞춰 두면,<br>그다음은 붙여넣기.</h2><p>사이드바 맨 아래의 ‘설정’에서 저장·다운로드, 치지직 계정, 영상 변환, 프로그램 동작, 업데이트 카드에서 필요한 항목을 정하세요. 저장 위치를 바꾸면 다음 실행에도 유지됩니다. 첫 실행에 FFmpeg·ffprobe와 yt-dlp nightly를 받고 시작할 때마다 확인해 없거나 손상된 도구를 자동 준비하며, ‘도구 업데이트’는 최신 도구를 다시 받지 않고 필요한 도구만 교체합니다. 창 크기는 해상도와 Windows 배율에 맞춰 자동으로 정해지고, 작은 화면에서는 설정 내용을 스크롤로 볼 수 있습니다.</p><p>파일 이름에 게시 날짜·채널을 넣거나 채널별 폴더에 저장하고, 영상 한 개당 속도 상한을 정할 수 있습니다. 라이브나 다시보기에서 일부 구간이 빠지면 ‘치지직 CDN’을 글로벌 CDN(Akamai, 베타)으로 바꿔 보세요. 변환 전·완료 다시보기 모두 지원하며 새로 넣는 작업부터 적용됩니다. 글로벌 연결에 실패하면 재시도·기본 CDN 변경을 안내하고, 클립은 제공된 CDN을 사용합니다. 아래쪽 ‘프로그램 동작’에는 새 영상 확인 간격·자동 다운로드의 받을 내용과 썸네일 캐시 비우기가 있습니다.</p><p class="muted">기존 yt-dlp 지원 사이트도 함께 사용할 수 있습니다. 사이트의 변경이나 계정 접근 조건에 따라 다운로드 가능 여부가 달라질 수 있습니다.</p></div>
-      <div class="settings-screen"><img src="img/app-settings.png" width="1908" height="1332" loading="lazy" alt="1.0.9 설정 화면. 저장 위치·화질·파일 이름 규칙·채널별 폴더·동시 영상과 조각 수·속도 제한·치지직 CDN(베타)과 치지직 계정 카드가 보입니다."></div>
-    </section>
-
-    <section class="channels wrap" id="channels" data-chapter aria-labelledby="channels-title">
-      <div class="channels-head"><div><p class="eyebrow">YOUR CHANNELS. YOUR PICKS.</p><h2 id="channels-title">좋아하는 채널은,<br>카드 한 장으로.</h2></div><p>‘채널 즐겨찾기’에서 채널명이나 주소로 찾아 ‘추가’를 누르세요. 저장한 카드를 누르면 그 채널의 VOD가 썸네일·제목·날짜와 함께 펼쳐지고, 원하는 영상만 골라 바로 받을 수 있습니다. 치지직 계정을 연결하면 팔로잉 채널이 자동으로 추가되며, 카드는 드래그로 순서를 바꿀 수 있습니다.</p></div>
-      <div class="channel-shots">
-        <figure><div class="settings-screen"><img src="img/app-favorites.png" width="1908" height="1332" loading="lazy" alt="채널 즐겨찾기 화면. 위쪽에 채널명·주소 검색과 오른쪽에 ‘추가’ 버튼이 있는 결과 카드, 아래쪽에 아바타와 채널명이 있는 저장한 채널 카드 여섯 개가 있습니다."></div><figcaption>검색하고, 추가하고, 카드로 모아 두기</figcaption></figure>
-        <figure><div class="settings-screen"><img src="img/app-channel.png" width="1908" height="1332" loading="lazy" alt="1.0.9 채널 화면. 보기·정렬·새 영상 자동 다운로드, 받음·채팅 받음·영상과 채팅 받음 배지와 선택한 영상 채팅 저장 버튼이 보입니다."></div><figcaption>기록 목록을 정리해도 영상·채팅 저장 여부를 유지하고 필요한 항목만 선택</figcaption></figure>
+      <div class="faq-group">
+        <h3>다운로드</h3>
+        <details><summary>어떤 주소를 입력하나요?</summary><p>영상이 있는 페이지의 주소라면 사이트를 가리지 않고 분석해 받습니다. 치지직은 <code>https://chzzk.naver.com/video/번호</code> 다시보기 주소나 <code>https://chzzk.naver.com/clips/ID</code> 클립 주소, 라이브 방송 주소를 넣으세요. 그 밖에 YouTube(쇼츠)·인스타그램 릴스 등의 개별 영상 주소도 받을 수 있습니다. 사이트의 변경이나 계정 접근 조건에 따라 다운로드 가능 여부가 달라질 수 있습니다.</p></details>
+        <details><summary>채널 즐겨찾기는 어떻게 쓰나요?</summary><p>‘채널 즐겨찾기’에서 채널명이나 <code>https://chzzk.naver.com/채널ID</code> 주소로 검색해 ‘추가’를 누르세요. 저장한 카드를 누르면 전체 영상·다시보기·업로드·클립을 최신순·인기순으로 볼 수 있고, 원하는 영상만 선택해 받습니다. ‘받지 않은 영상만 선택’으로 아직 받지 않은 영상을 한 번에 고를 수 있으며, 카드는 드래그로 순서를 바꿉니다.</p></details>
+        <details><summary>채팅만 저장할 수 있나요?</summary><p>치지직 다시보기 주소를 넣고 ‘받을 내용 → 채팅만’을 선택하거나, 채널 화면에서 ‘선택한 영상 채팅 저장’을 누르세요. 저장한 HTML은 인터넷 연결 없이 열리고, 검색·사용자별 요약에서 구독·후원·가림 상태를 볼 수 있습니다. 닉네임을 바꾼 사용자도 같은 ID로 모입니다. 팔로우 여부는 제공되지 않으며, 라이브·클립·다른 사이트의 채팅은 대상이 아닙니다.</p></details>
+        <details><summary>구간만 받으면 정확히 잘리나요?</summary><p>재인코딩 없이 자르므로 몇 초 차이가 날 수 있습니다. 끝을 비우면 영상 끝까지 받고, 한 번 추가하면 체크가 풀립니다. 주소 입력·다중 다운로드에만 적용되며 채널 화면의 일괄 선택에는 적용되지 않습니다. ‘영상 + 채팅’에서는 영상만 잘라 받고 채팅은 전체를 저장합니다.</p></details>
+        <details><summary>라이브 녹화에는 공간이 얼마나 필요한가요?</summary><p>1080p60 기준 시간당 약 3.8GB, 10시간에 약 38GB가 필요하며 화질에 따라 달라집니다. MP4로 정리할 때 녹화 크기만큼 여유 공간이 더 필요합니다. 남은 공간이 1GB 아래로 줄면 녹화를 멈추고 저장하며, 정리할 공간이 없거나 MP4 변환에 실패하면 TS 파일로 보존합니다. 라이브 녹화는 재실행 복원·이어받기를 하지 않습니다.</p></details>
+        <details><summary>새 영상 확인과 자동 다운로드는 어떻게 켜나요?</summary><p>‘설정 → 프로그램 동작 → 즐겨찾기 채널의 새 영상 확인’을 켜고 간격을 1~24시간으로 입력하세요(기본 꺼짐, 기본 간격 1시간). 간격 옆 ‘받을 내용’에서 영상·채팅만·영상 + 채팅을 고르고, 자동으로 받을 채널은 채널 화면에서 ‘새 영상 자동 다운로드’도 켜세요. 처음 확인한 기존 영상은 알리거나 받지 않으며, 이미 받았거나 대기·진행 중인 내용은 건너뜁니다.</p></details>
+        <details><summary>다운로드가 끊기거나 일부 구간이 빠지면요?</summary><p>시간 초과·연결 끊김 같은 일시적인 오류는 같은 실행에서 두 번까지 자동으로 이어받습니다. 취소·실패한 영상은 받은 부분을 보관해 두었다가 재시도할 때 이어받습니다. 라이브나 다시보기에서 일부 구간이 빠진다면 ‘설정 → 치지직 CDN’을 글로벌 CDN(Akamai, 베타)으로 바꿔 보세요. 새로 넣는 작업부터 적용되며, 글로벌 연결에 실패하면 재시도나 기본 CDN 변경을 안내합니다. 클립은 제공된 CDN을 사용합니다.</p></details>
+        <details><summary>속도 제한과 동시 다운로드는 어떻게 적용되나요?</summary><p>최대 4개 영상을, 영상마다 최대 16개 조각으로 나눠 동시에 받습니다. 속도 제한은 영상 한 개당 상한(1~50 MB/s)이므로 여러 영상을 받을 때 합계는 동시 영상 수만큼 늘어날 수 있습니다. 라이브·구간 다운로드에는 제한이 적용되지 않을 수 있습니다.</p></details>
+        <details><summary>취소·대기 목록은 다시 실행하면 어떻게 되나요?</summary><p>대기 상태로 복원되며 자동으로 시작하지 않습니다. ‘대기열 계속’을 누르면 저장한 위치와 옵션으로 받은 부분부터 이어받습니다. 라이브·구간 작업은 대상이 아닙니다. 필요 없는 대기 항목은 다운로드 목록에서 우클릭해 ‘목록에서 삭제’를 누르면 다시 복원하지 않으며, 기록과 영상 파일은 유지합니다.</p></details>
+        <details><summary>이미 받은 영상을 다시 넣으면요?</summary><p>공유 주소·모바일 주소처럼 형태가 달라도 같은 영상이면 다시 받을지 먼저 확인합니다. 기록 목록을 정리했거나 다시 실행해도 받은 영상을 기억하며, 대기·진행 중인 영상은 중복으로 넣지 않습니다.</p></details>
+        <details><summary>일시정지를 누르면 받던 영상도 멈추나요?</summary><p>대기열 일시정지는 새로운 영상의 시작을 멈춥니다. 진행 중인 영상은 계속 다운로드하며, 해당 영상의 ‘취소’ 버튼으로 중단할 수 있습니다.</p></details>
+        <details><summary>기록을 정리하면 영상도 지워지나요?</summary><p>다운로드 기록에서 해당 항목과 미리보기 캐시, 그 작업이 보관한 미완성 다운로드 조각을 제거합니다. 저장 폴더의 완성된 영상 파일은 유지되며, 채널 화면의 받음 배지와 중복 확인도 그대로 유지됩니다.</p></details>
+        <details><summary>TVer 영상은 어떻게 받나요?</summary><p>TVer의 개별 에피소드 주소를 넣으세요. 일본 VPN에 연결해야 하며 다운로드가 끝날 때까지 연결을 유지해야 합니다.</p></details>
       </div>
-      <p>채널 화면에서 전체 영상·다시보기·업로드·클립과 최신순·인기순을 고를 수 있습니다. ‘받지 않은 영상만 선택’은 채팅만 저장한 영상도 선택하며, ‘선택한 영상 채팅 저장’은 클립을 제외한 다시보기에 사용합니다.</p><p class="caption">실제 1.0.9 앱 화면 · 채널·영상 정보는 현재 공개 목록의 일부이며, 새 영상 개수와 영상·채팅 저장 배지는 소개용 예시입니다.</p>
+
+      <div class="faq-group">
+        <h3>계정</h3>
+        <details><summary>로그인이 필요한 영상도 받을 수 있나요?</summary><p>치지직 계정을 연결하면 받을 수 있습니다. 19세 영상은 본인·성인 인증된 네이버 계정이, 구독자 영상 등은 그 계정의 시청 권한이 필요합니다. 인증이나 시청 권한이 없는 영상은 받을 수 없습니다.</p></details>
+        <details><summary>로그인 쿠키는 어디에 저장되나요?</summary><p>EXE 옆 <code>.auth</code> 폴더에 현재 Windows 사용자 계정에 묶어 암호화 저장합니다. 개발자나 별도 수집 서버로 전송하지 않으며, 인증 쿠키는 네이버·치지직 인증과 영상 조회에 전달됩니다. 다른 PC·Windows 계정에서는 쓸 수 없고, 쿠키가 만료되거나 네이버가 로그인을 해제하면 다시 가져와야 합니다. 로그아웃하면 현재 계정의 쿠키만 삭제합니다.</p></details>
+        <details><summary>여러 계정을 쓸 수 있나요?</summary><p>다른 계정의 쿠키를 가져오면 프로필로 추가되고, 같은 계정은 쿠키를 갱신합니다. 설정 위의 프로필 사진·이름을 눌러 계정을 전환하고, ‘새 계정 추가’로 연결 창을 바로 열 수 있습니다. 즐겨찾기와 순서는 계정마다 따로 유지하며, 로그아웃해도 목록은 남습니다.</p></details>
+      </div>
+
+      <div class="faq-group">
+        <h3>프로그램·업데이트</h3>
+        <details><summary>FFmpeg·yt-dlp를 따로 설치해야 하나요?</summary><p>아닙니다. 첫 실행에 FFmpeg·ffprobe와 yt-dlp nightly를 받아 두고, 시작할 때마다 확인해 없거나 손상되었으면 자동으로 다시 준비합니다. 진행 상황은 어느 탭에서든 메인 창 하단에 표시됩니다. 설정의 ‘도구 업데이트’를 누르면 바뀌었거나 손상된 도구만 검증해 교체합니다.</p></details>
+        <details><summary>업데이트는 어떻게 진행되나요?</summary><p>시작할 때 GitHub의 정식 릴리스를 확인하고, 새 버전이 있으면 추가·변경·수정 내역과 함께 ‘지금 업데이트’ 또는 ‘나중에’를 묻습니다. 설치를 고르면 진행 중인 다운로드가 끝난 뒤 업데이트 창이 ZIP을 받아 SHA-256으로 검증하고, 프로그램 파일만 교체한 뒤 다시 시작합니다. 교체에 실패하면 원래대로 복원합니다. 저장한 영상·다운로드 기록·설정·채널 즐겨찾기·저장한 계정은 바꾸지 않습니다. ‘설정 → 업데이트 확인’으로 직접 확인하면 최신 버전일 때도 알려 줍니다.</p></details>
+        <details><summary>창을 닫으면 다운로드도 멈추나요?</summary><p>설정에서 ‘닫기 버튼을 누르면 트레이로’를 켜면 창을 숨겨도 다운로드가 계속됩니다. 트레이 메뉴에서 대기열을 멈추거나 재개하고, 완료 알림으로 다시 돌아올 수 있습니다. 이 설정이 꺼져 있으면 종료할지 한 번 확인합니다.</p></details>
+      </div>
+
+      <div class="faq-group" id="security">
+        <h3>실행 경고·보안</h3>
+        <p class="faq-intro">현재 배포하는 <code>ChzzkDownloader.exe</code>에는 <strong>개발자 신원을 확인하는 코드 서명이 없습니다.</strong> ‘알 수 없는 게시자’로 표시되거나 다운로드·실행 이력이 충분하지 않아 SmartScreen 경고가 나올 수 있습니다. <strong>서명이 없다는 사실만으로 트로이목마가 들어 있다는 뜻은 아닙니다.</strong> 다만 실제 백신 탐지까지 모두 서명 때문이라고 단정할 수는 없습니다.</p>
+        <details open>
+          <summary>‘Windows의 PC 보호’와 ‘Trojan’ 탐지는 어떻게 다른가요?</summary>
+          <p><strong>‘알 수 없는 게시자’·‘Windows의 PC 보호’·‘인식할 수 없는 앱’:</strong> 게시자나 실행 평판을 충분히 확인하지 못했을 때도 나오는 경고입니다. 이 문구만으로 특정 트로이목마가 검출됐다고 판단하지 마세요. 다운로드 출처와 파일을 확인하세요.</p>
+          <p><strong><code>Trojan:Win32/…</code> 같은 탐지명·파일 격리·삭제:</strong> Windows 보안이나 백신의 악성코드 검사 결과이므로 별도 확인이 필요합니다. 정상 파일을 잘못 탐지하는 ‘오탐’일 수도 있지만, 서명 유무나 탐지명만으로 오탐이라고 확정할 수는 없습니다. 실행·격리 해제를 보류하고 아래 방법으로 신고해 주세요.</p>
+          <p>코드 서명은 배포자와 서명 이후의 변조 여부를 확인하는 전자 서명이며, 악성코드 검사나 안전 보증서와는 다릅니다. SmartScreen은 파일과 서명의 평판도 확인합니다. <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/install/authenticode">Microsoft 코드 서명 안내 ↗</a> · <a href="https://learn.microsoft.com/en-us/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/">SmartScreen 동작 원리 ↗</a></p>
+        </details>
+        <details>
+          <summary>공식 배포 파일인지 확인하는 방법</summary>
+          <p>1. <a href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest">공식 GitHub 릴리스 ↗</a>에서 ZIP을 받으세요. 메신저 첨부나 재업로드 파일 대신 공식 배포 파일을 이용하세요.</p>
+          <p>2. ZIP이 든 폴더의 빈 곳에서 우클릭해 터미널 또는 PowerShell을 열고 다음 명령을 실행하세요. 파일명은 받은 버전에 맞춰 바꾸세요.</p>
+          <p><code>Get-FileHash -LiteralPath ".\ChzzkDownloader_v109.zip" -Algorithm SHA256</code></p>
+          <p>출력의 <code>Hash</code>를 같은 버전 릴리스의 ‘파일 검증’ 값과 비교하세요. 대소문자는 상관없습니다. ZIP 원본끼리 비교해야 하며 EXE의 해시는 다른 값입니다. 다르면 실행하지 말고 공식 파일을 다시 받으세요. 일치는 배포 파일과 같다는 확인이며, 악성코드가 없다는 별도 인증은 아닙니다. <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-5.1">Microsoft 명령 설명 ↗</a></p>
+        </details>
+        <details>
+          <summary>백신이 실제로 탐지·격리했다면 어떻게 하나요?</summary>
+          <p>Windows 보안의 ‘바이러스 및 위협 방지 → 보호 기록’ 또는 사용 중인 백신의 탐지 기록에서 <strong>탐지명·파일명·프로그램 버전</strong>을 확인해 <a href="https://github.com/deuxdoom/ChzzkDownloader/issues">GitHub Issues ↗</a>에 알려 주세요. 쿠키·계정 파일·개인 경로는 올리지 마세요.</p>
+          <p>Microsoft Defender의 오탐이 의심되면 <a href="https://www.microsoft.com/en-us/wdsi/filesubmission">Microsoft 파일 분석 접수 ↗</a>에 해당 배포 파일을 제출해 재검토를 요청할 수 있습니다. 다른 백신은 해당 제조사의 오탐 신고 창구를 이용하세요. 제출은 해당 보안 업체에 파일을 전송하는 절차이며, 계정·설정 파일은 포함하지 마세요.</p>
+          <p>백신을 끄거나 프로그램 폴더 전체를 검사 예외로 등록할 필요는 없습니다. 탐지 원인과 검토 결과가 확인되기 전에는 실행·복원을 보류해 주세요.</p>
+        </details>
+      </div>
     </section>
 
-    <section class="settings wrap" id="account" data-chapter aria-labelledby="account-title">
-      <div class="settings-copy"><p class="eyebrow">YOUR ACCOUNT. YOUR LIST.</p><h2 id="account-title">계정을 연결하면,<br>팔로잉도 그대로.</h2><p>평소 브라우저에서 치지직에 로그인한 뒤 내보낸 cookies.txt를 ‘설정 → 치지직 계정 → 쿠키 파일 가져오기’에서 연결하세요. 아이디·비밀번호 입력 없이 로그인을 확인하고, 팔로잉 채널을 즐겨찾기에 자동으로 추가합니다. 여러 계정을 저장하면 설정 위의 프로필 사진·이름에서 전환할 수 있고, 즐겨찾기와 순서는 계정마다 따로 유지합니다.</p><p class="muted">실제 1.0.9 화면 · 계정 이름과 사진은 소개용 예시입니다. 19세 영상은 본인·성인 인증된 계정의 시청 권한이 있어야 받을 수 있습니다.</p></div>
-      <div class="settings-screen"><img src="img/app-account.png" width="1908" height="1332" loading="lazy" alt="설정 위 프로필 버튼에서 연 계정 메뉴. ‘저장된 계정’ 제목 아래에 현재 표시가 붙은 예시 계정과 두 번째 예시 계정, 치지직 채널 열기·로그아웃·새 계정 추가 항목이 있고, 오른쪽에 치지직 계정 설정 카드가 보입니다."></div>
-    </section>
-
-    <section class="settings wrap" id="cookie" aria-labelledby="cookie-title">
-      <div class="settings-copy"><p class="eyebrow">STAYS ON YOUR PC.</p><h2 id="cookie-title">로그인 쿠키는,<br>내 PC에만.</h2><p>연결 창에서 저장에 동의한 뒤 <code>chzzk.naver.com_cookies.txt</code>를 선택하고 ‘가져오고 연결’을 누르세요. 파일에서 NID_AUT·NID_SES 두 쿠키만 골라 Windows 사용자 계정에 묶어 암호화 저장하며, 개발자나 별도 수집 서버로 전송하지 않습니다. 인증 쿠키는 네이버·치지직 인증과 영상 조회에 전달됩니다.</p><p class="muted">실제 1.0.9 화면 · 가져온 쿠키 파일은 암호화되지 않으며 프로그램이 수정·삭제하지 않으므로, 연결 후 필요 없으면 직접 삭제하세요. 쿠키가 만료되면 다시 가져와야 하며 영구 로그인을 보장하지 않습니다.</p></div>
-      <div class="settings-screen cookie-screen"><img src="img/app-cookie.png" width="840" height="1170" loading="lazy" alt="브라우저 쿠키로 치지직 계정 연결 창. 내 PC에만 암호화 저장한다는 안내, 확장 프로그램의 첫 번째 Export 버튼을 가리키는 안내 이미지, 저장 동의 체크와 파일 선택·가져오고 연결 버튼이 보입니다."></div>
-    </section>
-
-    <section class="settings wrap" id="tools" aria-labelledby="tools-title">
-      <div class="settings-copy"><p class="eyebrow">READY AT A GLANCE.</p><h2 id="tools-title">도구 준비도,<br>하단에서 한눈에.</h2><p>어느 탭에 있든 하단 상태바에서 도구 확인·다운로드·설치 상황을 확인할 수 있습니다. 다운로드 진행률은 민트색으로 표시하며, 완료 안내는 5초 뒤 서서히 사라집니다.</p><p class="muted">실제 1.0.9 화면 · 도구 다운로드 55%는 소개용 예시입니다.</p></div>
-      <div class="settings-screen"><img src="img/app-tools.png" width="1908" height="1332" loading="lazy" alt="모든 탭에 표시되는 메인 창 하단 도구 다운로드 상태와 55% 진행률, 오른쪽 아래 GitHub 아이콘과 버전 1.0.9 예시."></div>
-    </section>
-
-    <section class="settings wrap" id="age-rating" aria-labelledby="age-title">
-      <div class="settings-copy"><p class="eyebrow">KNOW BEFORE YOU PICK.</p><h2 id="age-title">연령 제한은,<br>썸네일에서 확인.</h2><p>연령 확인이 필요한 치지직 영상은 썸네일 오른쪽 위의 빨간색 19세 배지로 구분합니다. 본인·성인 인증된 치지직 계정을 연결하면 그 계정의 시청 권한으로 받을 수 있습니다. 공개 영상과 지역 제한만 있는 영상에는 이 배지를 표시하지 않습니다.</p><p class="muted">실제 1.0.9 화면 · 영상과 제한 상태는 소개용 예시입니다. 인증·시청 권한이 없는 계정으로는 받을 수 없습니다.</p></div>
-      <div class="settings-screen"><img src="img/app-channel-age.png" width="1908" height="1332" loading="lazy" alt="연령 제한 표시 예시 채널의 썸네일 오른쪽 위에 표시한 빨간색 19세 배지와 배지가 없는 공개 영상 카드."></div>
-    </section>
-
-    <section class="faq wrap" id="security" aria-labelledby="security-title">
-      <p class="eyebrow">CHECK THE MESSAGE. CHECK THE FILE.</p>
-      <h2 id="security-title">실행 경고와 트로이목마 탐지,<br>어떻게 확인하나요?</h2>
-      <p>현재 배포하는 <code>ChzzkDownloader.exe</code>에는 <strong>개발자 신원을 확인하는 코드 서명이 없습니다.</strong> ‘알 수 없는 게시자’로 표시되거나 다운로드·실행 이력이 충분하지 않아 SmartScreen 경고가 나올 수 있습니다. <strong>서명이 없다는 사실만으로 트로이목마가 들어 있다는 뜻은 아닙니다.</strong> 다만 실제 백신 탐지까지 모두 서명 때문이라고 단정할 수는 없습니다.</p>
-      <details open>
-        <summary>‘Windows의 PC 보호’와 ‘Trojan’ 탐지는 어떻게 다른가요?</summary>
-        <p><strong>‘알 수 없는 게시자’·‘Windows의 PC 보호’·‘인식할 수 없는 앱’:</strong> 게시자나 실행 평판을 충분히 확인하지 못했을 때도 나오는 경고입니다. 이 문구만으로 특정 트로이목마가 검출됐다고 판단하지 마세요. 다운로드 출처와 파일을 확인하세요.</p>
-        <p><strong><code>Trojan:Win32/…</code> 같은 탐지명·파일 격리·삭제:</strong> Windows 보안이나 백신의 악성코드 검사 결과이므로 별도 확인이 필요합니다. 정상 파일을 잘못 탐지하는 ‘오탐’일 수도 있지만, 서명 유무나 탐지명만으로 오탐이라고 확정할 수는 없습니다. 실행·격리 해제를 보류하고 아래 방법으로 신고해 주세요.</p>
-        <p>코드 서명은 배포자와 서명 이후의 변조 여부를 확인하는 전자 서명이며, 악성코드 검사나 안전 보증서와는 다릅니다. SmartScreen은 파일과 서명의 평판도 확인합니다. <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/install/authenticode">Microsoft 코드 서명 안내 ↗</a> · <a href="https://learn.microsoft.com/en-us/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/">SmartScreen 동작 원리 ↗</a></p>
-      </details>
-      <details>
-        <summary>공식 배포 파일인지 확인하는 방법</summary>
-        <p>1. <a href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest">공식 GitHub 릴리스 ↗</a>에서 ZIP을 받으세요. 메신저 첨부나 재업로드 파일 대신 공식 배포 파일을 이용하세요.</p>
-        <p>2. ZIP이 든 폴더의 빈 곳에서 우클릭해 터미널 또는 PowerShell을 열고 다음 명령을 실행하세요. 파일명은 받은 버전에 맞춰 바꾸세요.</p>
-        <p><code>Get-FileHash -LiteralPath ".\ChzzkDownloader_v109.zip" -Algorithm SHA256</code></p>
-        <p>출력의 <code>Hash</code>를 같은 버전 릴리스의 ‘파일 검증’ 값과 비교하세요. 대소문자는 상관없습니다. ZIP 원본끼리 비교해야 하며 EXE의 해시는 다른 값입니다. 다르면 실행하지 말고 공식 파일을 다시 받으세요. 일치는 배포 파일과 같다는 확인이며, 악성코드가 없다는 별도 인증은 아닙니다. <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-5.1">Microsoft 명령 설명 ↗</a></p>
-      </details>
-      <details>
-        <summary>백신이 실제로 탐지·격리했다면 어떻게 하나요?</summary>
-        <p>Windows 보안의 ‘바이러스 및 위협 방지 → 보호 기록’ 또는 사용 중인 백신의 탐지 기록에서 <strong>탐지명·파일명·프로그램 버전</strong>을 확인해 <a href="https://github.com/deuxdoom/ChzzkDownloader/issues">GitHub Issues ↗</a>에 알려 주세요. 쿠키·계정 파일·개인 경로는 올리지 마세요.</p>
-        <p>Microsoft Defender의 오탐이 의심되면 <a href="https://www.microsoft.com/en-us/wdsi/filesubmission">Microsoft 파일 분석 접수 ↗</a>에 해당 배포 파일을 제출해 재검토를 요청할 수 있습니다. 다른 백신은 해당 제조사의 오탐 신고 창구를 이용하세요. 제출은 해당 보안 업체에 파일을 전송하는 절차이며, 계정·설정 파일은 포함하지 마세요.</p>
-        <p>백신을 끄거나 프로그램 폴더 전체를 검사 예외로 등록할 필요는 없습니다. 탐지 원인과 검토 결과가 확인되기 전에는 실행·복원을 보류해 주세요.</p>
-      </details>
-    </section>
-
-    <section class="settings updates wrap" id="updates" aria-labelledby="updates-title">
-      <div class="settings-copy"><p class="eyebrow">ALWAYS UP TO DATE.</p><h2 id="updates-title">새 버전은,<br>알아서 안전하게.</h2><p>시작할 때 GitHub의 정식 릴리스를 확인합니다. 처음 뜨는 안내창에서 추가·변경·수정 내역을 읽고 ‘지금 업데이트’ 또는 ‘나중에’를 선택하세요. 설치를 고르면 진행 중인 다운로드가 끝난 뒤 업데이트 창이 이어받아 새 버전을 준비합니다.</p><ol class="update-steps"><li>새 버전의 변경 내역 확인 · 지금 업데이트 / 나중에 선택</li><li>ZIP 다운로드 · SHA-256 검증</li><li>프로그램 파일만 교체 · 실패하면 원래대로 복원</li><li>다시 시작 · 완료 5초 뒤 업데이트 창 자동 닫힘</li></ol><p class="muted">저장한 영상 · 다운로드 기록 · 설정 · 채널 즐겨찾기 · 저장한 계정은 바꾸지 않습니다. ‘설정 → 업데이트 확인’으로 직접 확인하면 최신 버전일 때도 안내창을 보여 줍니다.</p></div>
-      <div class="settings-screen update-screen"><img src="img/app-update.png" width="960" height="900" loading="lazy" alt="업데이트 창. 새 버전 파일을 내려받는 진행률과 상태, 릴리스 내역, 저장한 영상·기록·설정은 그대로 이어진다는 안내가 보입니다."></div>
-    </section>
-
-    <section class="faq wrap" id="faq" data-chapter aria-labelledby="faq-title"><h2 id="faq-title">궁금한 점이 있다면.</h2><details><summary>어떤 주소를 입력하나요?</summary><p>영상이 있는 페이지의 주소라면 사이트를 가리지 않고 분석해 받습니다. 치지직은 <code>https://chzzk.naver.com/video/번호</code> VOD 주소나 <code>https://chzzk.naver.com/clips/ID</code> 클립 주소, 그 밖에 YouTube(쇼츠)·인스타그램 릴스 등의 개별 영상 주소를 입력하세요. 여러 주소는 ‘다중 다운로드’ 창에 한 줄씩 넣으세요. 채널에서 고르려면 ‘채널 즐겨찾기’에 저장한 뒤 VOD 카드를 선택하세요.</p></details><details><summary>채널 즐겨찾기는 어떻게 쓰나요?</summary><p>채널명 또는 <code>https://chzzk.naver.com/채널ID</code> 주소로 검색해 결과 카드의 ‘추가’를 누릅니다. 저장한 카드를 누르면 VOD가 썸네일·제목·날짜 카드로 표시되고, 카드를 눌러 선택한 영상만 다운로드합니다. 치지직 계정을 연결하면 팔로잉 채널이 자동으로 추가되고, 즐겨찾기는 계정마다 따로 보관합니다.</p></details><details><summary>채팅만 저장할 수 있나요?</summary><p>치지직 다시보기 주소를 넣고 ‘받을 내용 → 채팅만’을 선택하거나, 채널 화면에서 ‘선택한 영상 채팅 저장’을 누르세요. 저장한 HTML은 인터넷 연결 없이 열고 검색·사용자별 채팅·구독·후원·가림 상태를 볼 수 있습니다. 팔로우 여부는 제공되지 않습니다. 라이브·클립·다른 사이트의 채팅은 대상이 아니며, 제한된 다시보기는 연결한 계정의 시청 권한이 필요합니다.</p></details><details><summary>TVer 영상은 어떻게 받나요?</summary><p>TVer의 개별 에피소드 주소를 넣으세요. 일본 VPN에 연결해야 하며 다운로드가 끝날 때까지 유지해야 합니다.</p></details><details><summary>취소·대기 목록은 다시 실행하면 어떻게 되나요?</summary><p>대기 상태로 복원되며 자동으로 시작하지 않습니다. ‘대기열 계속’을 누르면 저장한 위치와 옵션으로 받은 부분부터 이어받습니다. 실패한 영상도 재시도로 이어받을 수 있으며 라이브·구간 작업은 대상이 아닙니다. 필요 없는 대기 항목은 다운로드 목록에서 우클릭해 ‘목록에서 삭제’를 누르면 다시 복원하지 않으며, 기록과 영상 파일은 유지합니다. 주소 형태가 달라도 이미 받은 영상이면 다시 받을지 확인합니다.</p></details><details><summary>로그인이 필요한 영상도 받을 수 있나요?</summary><p>치지직 계정을 연결하면 받을 수 있습니다. 19세 영상은 본인·성인 인증된 네이버 계정이, 구독자 영상 등은 그 계정의 시청 권한이 필요합니다. 인증이나 시청 권한이 없는 영상은 받을 수 없습니다.</p></details><details><summary>치지직 계정은 어떻게 연결하나요?</summary><p>평소 브라우저에 Get cookies.txt LOCALLY를 설치하고 치지직에 로그인한 뒤 메인 화면 <code>https://chzzk.naver.com/</code>을 엽니다. 주소창 옆의 확장 프로그램 아이콘을 눌러 왼쪽 첫 번째 Export 버튼으로 <code>chzzk.naver.com_cookies.txt</code>를 저장하세요. 앱의 ‘설정 → 치지직 계정 → 쿠키 파일 가져오기’에서 저장에 동의하고 이 파일을 선택한 뒤 ‘가져오고 연결’을 누릅니다. 아이디·비밀번호 입력은 필요 없습니다.</p></details><details><summary>로그인 쿠키는 어디에 저장되나요?</summary><p>EXE 옆 <code>.auth</code> 폴더에 현재 Windows 사용자 계정에 묶어 암호화 저장합니다. 개발자나 별도 수집 서버로 전송하지 않으며, 인증 쿠키는 네이버·치지직 인증과 영상 조회에 전달됩니다. 다른 PC·Windows 계정에서는 쓸 수 없고, 쿠키가 만료되거나 네이버가 로그인을 해제하면 다시 가져와야 합니다. 로그아웃하면 현재 계정의 쿠키만 삭제합니다.</p></details><details><summary>여러 계정을 쓸 수 있나요?</summary><p>다른 계정의 쿠키를 가져오면 프로필로 추가되고, 같은 계정은 쿠키를 갱신합니다. 설정 위의 프로필 사진·이름을 눌러 계정을 전환하고, ‘새 계정 추가’로 연결 창을 바로 열 수 있습니다. 즐겨찾기와 순서는 계정마다 따로 유지하며, 로그아웃해도 목록은 남습니다.</p></details><details><summary>일시정지를 누르면 받던 영상도 멈추나요?</summary><p>대기열 일시정지는 새로운 영상의 시작을 멈춥니다. 진행 중인 영상은 계속 다운로드하며, 해당 영상의 취소 버튼으로 중단할 수 있습니다.</p></details><details><summary>기록을 정리하면 영상도 지워지나요?</summary><p>다운로드 기록에서 해당 항목과 미리보기 캐시, 그 작업이 보관한 미완성 다운로드 조각을 제거합니다. 저장 폴더의 완성된 영상 파일은 유지됩니다.</p></details></section>
-
-    <section class="closing wrap" id="download" data-chapter><div><p class="eyebrow">READY WHEN YOU ARE.</p><h2>좋아하는 방송을,<br>오래 간직하세요.</h2></div><div class="closing-actions"><a class="button primary" href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest" data-download><span aria-hidden="true">↓</span> 다운로드(.zip)</a><a class="button secondary" href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest"><span class="github-icon" aria-hidden="true"></span>최신 릴리즈 확인 <span aria-hidden="true">↗</span></a></div></section>
+    <section class="closing wrap" id="download" data-chapter><div><p class="eyebrow">READY WHEN YOU ARE.</p><h2>좋아하는 방송을,<br>오래 간직하세요.</h2><p class="closing-meta">Windows 10·11 (x64) · ChzzkDownloader 1.0.9</p></div><div class="closing-actions"><a class="button primary" href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest" data-download><span aria-hidden="true">↓</span> 다운로드(.zip)</a><a class="button secondary" href="https://github.com/deuxdoom/ChzzkDownloader/releases/latest"><span class="github-icon" aria-hidden="true"></span>최신 릴리즈 확인 <span aria-hidden="true">↗</span></a></div></section>
   </main>
   <footer class="footer wrap"><div><a class="brand" href="#"><img src="img/logo.svg" width="28" height="28" alt=""><span>ChzzkDownloader</span></a><p>치지직·YouTube·TVer 등 영상 주소를 받는 개인 프로젝트. NAVER의 공식 프로그램이 아닙니다.</p><p>소스 비공개 · 배포 및 소개 목적 · 사전 허락 없는 상업적 이용·재배포 금지</p></div><div class="footer-links"><a href="https://github.com/deuxdoom/ChzzkDownloader"><span class="github-icon" aria-hidden="true"></span>GitHub</a><a href="https://github.com/deuxdoom/ChzzkDownloader/issues"><span class="github-icon" aria-hidden="true"></span>문제 제보</a><a href="https://github.com/deuxdoom/ChzzkDownloader/blob/main/LICENSE">이용 조건</a><a href="https://github.com/deuxdoom/TVerDownloader"><span class="github-icon" aria-hidden="true"></span>참고 프로젝트</a></div></footer>
 </body>

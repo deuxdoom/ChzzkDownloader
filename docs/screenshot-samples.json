@@ -127,5 +127,97 @@
     "app-live.png": [
       "Fictional live job and capacity estimate; no broadcast recorded"
     ]
+  },
+  "crops": {
+    "feature-live.png": {
+      "source": "app-live.png",
+      "box": [
+        360,
+        548,
+        1474,
+        174
+      ]
+    },
+    "feature-multi.png": {
+      "source": "app-multi.png",
+      "box": [
+        16,
+        16,
+        928,
+        296
+      ]
+    },
+    "feature-favorites.png": {
+      "source": "app-favorites.png",
+      "box": [
+        360,
+        545,
+        1008,
+        280
+      ]
+    },
+    "feature-watch.png": {
+      "source": "app-settings-behavior.png",
+      "box": [
+        388,
+        722,
+        784,
+        64
+      ]
+    },
+    "feature-section.png": {
+      "source": "app-input.png",
+      "box": [
+        360,
+        226,
+        1500,
+        252
+      ]
+    },
+    "feature-age.png": {
+      "source": "app-channel-age.png",
+      "box": [
+        360,
+        400,
+        1000,
+        372
+      ]
+    },
+    "feature-quality.png": {
+      "source": "app-quality.png",
+      "box": [
+        360,
+        345,
+        880,
+        270
+      ]
+    },
+    "feature-settings.png": {
+      "source": "app-settings.png",
+      "box": [
+        360,
+        226,
+        1500,
+        534
+      ]
+    },
+    "feature-update.png": {
+      "source": "app-update.png",
+      "box": [
+        30,
+        80,
+        900,
+        268
+      ]
+    },
+    "feature-account.png": {
+      "source": "app-account.png",
+      "box": [
+        20,
+        812,
+        300,
+        456
+      ]
+    }
   }
 }
