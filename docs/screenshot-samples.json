@@ -1,7 +1,13 @@
 {
   "note": "Actual released EXE Qt UI. Current public SAKURA catalogue and public channel images, fetched without cookies. Jobs, progress, saved badges, new-video counts, live recording, space estimates, tools, update and age states are fictional examples. No media downloaded or broadcast recorded. Account names and avatar are fictional; no cookie import, authentication or account network requests. Other screens show the not-connected account state.",
-  "app_version": "1.0.8",
-  "captured_at": "2026-11-03",
+  "app_version": "1.0.9",
+  "captured_at": "2026-11-08",
+  "catalogue": {
+    "channel_id": "97d97be401f6edc3b0ac6459bd498941",
+    "sort": "LATEST",
+    "page": 0,
+    "sample_limit": 6
+  },
   "frozen": true,
   "main_logical_size": [
     1272,
@@ -72,25 +78,25 @@
   },
   "screenshots": {
     "app-download.png": [
-      "https://chzzk.naver.com/video/15474788",
-      "https://chzzk.naver.com/video/15738571",
-      "https://chzzk.naver.com/video/15956566"
+      "https://chzzk.naver.com/video/15956566",
+      "https://chzzk.naver.com/video/16020347",
+      "https://chzzk.naver.com/video/16068305"
     ],
     "app-input.png": [
-      "https://chzzk.naver.com/video/14574876",
-      "https://chzzk.naver.com/video/15063133",
-      "https://chzzk.naver.com/video/14574878"
+      "https://chzzk.naver.com/video/16020347",
+      "https://chzzk.naver.com/video/16068305",
+      "https://chzzk.naver.com/video/15956566"
     ],
     "app-multi.png": [
-      "https://chzzk.naver.com/video/541672",
+      "https://chzzk.naver.com/video/16068305",
       "https://www.youtube.com/shorts/영상ID",
       "https://tver.jp/episodes/epgug2x569"
     ],
     "app-history.png": [
-      "https://chzzk.naver.com/video/13302477",
-      "https://chzzk.naver.com/video/13427487",
-      "https://chzzk.naver.com/video/13810588",
-      "https://chzzk.naver.com/video/14574879"
+      "https://chzzk.naver.com/video/15738571",
+      "https://chzzk.naver.com/video/15956566",
+      "https://chzzk.naver.com/video/16020347",
+      "https://chzzk.naver.com/video/16068305"
     ],
     "app-favorites.png": [
       "https://chzzk.naver.com/7ce8032370ac5121dcabce7bad375ced/videos",
@@ -102,12 +108,12 @@
     ],
     "app-channel.png": [
       "https://chzzk.naver.com/97d97be401f6edc3b0ac6459bd498941/videos",
-      "https://chzzk.naver.com/video/12787899",
-      "https://chzzk.naver.com/video/12509845",
-      "https://chzzk.naver.com/video/12004490",
-      "https://chzzk.naver.com/video/11759788",
-      "https://chzzk.naver.com/video/11713100",
-      "https://chzzk.naver.com/video/11713244"
+      "https://chzzk.naver.com/video/16068305",
+      "https://chzzk.naver.com/video/16020347",
+      "https://chzzk.naver.com/video/15956566",
+      "https://chzzk.naver.com/video/15738571",
+      "https://chzzk.naver.com/video/15474788",
+      "https://chzzk.naver.com/video/15063133"
     ],
     "app-channel-age.png": [
       "Fictional age/public examples; no authentication or download"
