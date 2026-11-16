@@ -188,6 +188,13 @@
 이어받을 영상은 **원래 저장 위치의 `.incomplete\` 폴더**와 기록을 함께 보관하세요. `thumbnail-cache\`는 미리보기 캐시이므로 백업하지 않아도 됩니다.
 로그인 정보인 `.auth\naver-session.dat`는 같은 Windows 계정에서만 사용할 수 있으며, 다른 PC·Windows 계정에서는 쿠키를 다시 가져와야 합니다. `.auth\runtime\`의 임시 쿠키는 백업하지 마세요.
 
+<a id="support"></a>
+
+## 🤝 문의 및 지원
+
+- **버그 제보 및 기능 제안:** [GitHub Issues](https://github.com/deuxdoom/ChzzkDownloader/issues)
+- **버전별 변경 내용:** [변경 기록](CHANGELOG.md) · [전체 릴리스](https://github.com/deuxdoom/ChzzkDownloader/releases)
+
 <a id="license"></a>
 
 <a id="-라이선스"></a>
@@ -196,11 +203,19 @@
 
 **Copyright © 2026 SAKURA. All rights reserved.**
 
-프로그램과 자체 제작 자료는 **개인의 비상업적 이용만 허용**합니다. 사전 허락 없는 상업적 이용이나 무단 재배포(수정본 포함)는 금지합니다. 자세한 조건은 [LICENSE](LICENSE)를 확인하세요.
-이 저장소는 배포·소개용이며 프로그램 소스 코드는 공개하지 않습니다. 소개할 때는 공식 홈페이지나 릴리스 링크를 공유해 주세요.
+| 항목 | 내용 |
+| --- | --- |
+| 배포 형태 | 프리웨어 (개인·비상업적 사용) |
+| 소스 코드 | 비공개 |
 
-FFmpeg·yt-dlp·PySide6·Pretendard·JetBrains Mono·Fluent UI System Icons·Octicons 등 외부 구성 요소에는 각각의 라이선스가 적용되며, 프로젝트의 이용 제한은 해당 라이선스가 부여하는 권리를 제한하지 않습니다.
+- **허용:** 프로그램을 개인의 비상업적 용도로 무료로 사용할 수 있습니다. 프로그램을 소개할 때는 공식 홈페이지나 공식 릴리스 링크를 공유해 주세요.
+- **금지:** 제작자의 사전 허락 없이 프로그램과 자체 제작 자료를 판매하거나 유료 서비스 등 영리 목적으로 이용할 수 없고, 프로그램·배포 파일·수정한 버전을 다시 올려 배포할 수 없습니다.
+- **전문:** [LICENSE](LICENSE)
 
-<a id="support"></a>
+### 제3자 구성 요소
 
-문의·제안은 [GitHub Issues](https://github.com/deuxdoom/ChzzkDownloader/issues), 버전별 내역은 [변경 기록](CHANGELOG.md)·[전체 릴리스](https://github.com/deuxdoom/ChzzkDownloader/releases)에서 확인하세요.
+함께 배포하는 제3자 구성 요소는 각자의 라이선스를 따르며, 위 조건은 그 라이선스가 부여하는 권리를 제한하지 않습니다. FFmpeg·yt-dlp·PySide6·Pretendard·JetBrains Mono·Fluent UI System Icons·Octicons 등이 여기에 해당합니다.
+
+### 상표
+
+치지직(CHZZK), NAVER, YouTube, Instagram, TVer, NVIDIA는 각 소유자의 상표입니다. ChzzkDownloader는 독립적으로 만든 비공식 프로그램이며, 해당 기업과 제휴하거나 승인을 받지 않았습니다.
